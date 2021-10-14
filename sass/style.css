@@ -1,0 +1,23 @@
+html {
+    background-color: #00539F;
+    font-size: 6px;
+    font-family: 'Myriad Pro';
+}
+
+body {
+    /* width: 160px; 
+   margin: 0 auto; */
+   background-color: #ffffff;
+   /* padding: 0 20px 20px 20px;
+   border: 5px solid black; */
+}
+
+* {
+    margin: 0 auto;
+}
+
+.header{
+    width: 160px;
+    height: 139px;
+    background: url('../images/header_mobile_logo.png') no-repeat;
+}
