@@ -1,0 +1,80 @@
+html {
+  background-color: #00539F;
+  font-size: 6px;
+  font-family: "Myriad Pro";
+}
+
+body {
+  background-color: #ffffff;
+}
+
+* {
+  margin: 0 auto;
+}
+
+.header__image {
+  width: 160px;
+  height: 139px;
+  background: url("../images/header_mobile_logo.png") no-repeat;
+}
+
+.header__text {
+  margin: 10px 0 0 10px;
+}
+
+.margin_both-height_3px {
+  margin: 3px 0;
+}
+
+.logo {
+  margin: 15px 0 0 10px;
+}
+
+.h1 {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 900;
+  text-align: justify;
+  font-stretch: 100%;
+  color: #000000;
+}
+
+.h3 {
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #000000;
+}
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("../fonts/MyriadPro/MyriadPro-Light.otf") format("opentype");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("../fonts/MyriadPro/MYRIADPRO-REGULAR.OTF") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("../fonts/MyriadPro/MYRIADPRO-SEMIBOLD.OTF") format("opentype");
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("../fonts/MyriadPro/MYRIADPRO-BOLD.OTF") format("opentype");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("../fonts/MyriadPro/Myriad-Pro-Black.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 900;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch sass:styles"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/nikita1984/sendiIt/issues"
   },
-  "homepage": "https://github.com/nikita1984/sendiIt#readme"
+  "homepage": "https://github.com/nikita1984/sendiIt#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1",
+    "npm": "^8.0.0",
+    "sass": "^1.43.2"
+  }
 }
