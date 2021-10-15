@@ -7,7 +7,9 @@ html
 body 
    background-color: #ffffff 
    
- 
+ul 
+   list-style-type: none
+   list-style-position: outside 
 
 * 
     margin: 0 auto 
@@ -48,10 +50,27 @@ body
 
 .navContainer
     display: block
-    background: white
+    position: absolute
+    top: 5vw
+    left: 5vw
+    min-width: 128px * 0.8
+    width: 90vw
+    height: 158px
+    background-color: #000000
 
     @media screen and (min-width: 161px)
       display: none
+
+.nav
+    color: #ffffff
+    font-family: 'Myriad Pro'
+    font-size: 9px
+    line-height: 2.05
+    font-weight: 400
+
+.nav > ul
+    position: absolute
+    left: -25%
 
 @font-face 
     font-family: "Myriad Pro"  
