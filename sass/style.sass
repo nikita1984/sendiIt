@@ -2,9 +2,10 @@ html
     background-color: #00539F 
     font-size: 12px
     $mainFont: 'Myriad Pro' !global
+    $mainFontWeight: 300 !global
     font:
         family: $mainFont
-        weight: 300 
+        weight: $mainFontWeight
  
 
 body 
@@ -13,6 +14,10 @@ body
 ul 
    list-style-type: none
    list-style-position: outside 
+
+a
+   text-decoration: none 
+   color: inherit
 
 .header__image
     width: 100vw
@@ -36,6 +41,7 @@ ul
         display: flex
         justify-content: space-between
         padding: 8%
+        padding-top: 3%
     
     .mobileMenu:hover &
         display: block
@@ -45,13 +51,11 @@ ul
 
 .nav
     color: #000000
-    line-height: 2.05
+    line-height: 1.9
     font:
         family: $mainFont
         size: 2.5rem
-        weight: 400
-
-
+        weight: $mainFontWeight + 100
 
 
 
