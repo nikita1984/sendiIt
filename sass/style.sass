@@ -18,15 +18,20 @@ ul
     background-size: cover
     display: flex
     justify-content: space-between
-    padding: 29px
+    padding: 8%
 
+.navContainer
+    display: none
+    position: absolute
+    top: 5vw
+    left: 5vw
+    min-width: 128px * 0.8
+    width: 90vw
+    height: 158px
+    background-color: #000000
 
-
-
-
-
-
-
+.mobile_nav:hover .navContainer
+    display: block
 
 
 
@@ -57,18 +62,7 @@ ul
     font-weight: 700 
     color: #000000 
 
-.navContainer
-    display: none
-    position: absolute
-    top: 5vw
-    left: 5vw
-    min-width: 128px * 0.8
-    width: 90vw
-    height: 158px
-    background-color: #000000
 
-    @media screen and (min-width: 161px)
-      display: none
 
 .nav
     color: #ffffff
