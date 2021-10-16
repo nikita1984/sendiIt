@@ -1,23 +1,57 @@
+@import _fonts.sass
+
+$mainColor: #008DCD
+$mainColorTwo: #94D1EC
+
 html 
     background-color: #00539F 
     font-size: 12px
-    $mainFont: 'Myriad Pro' !global
-    $mainFontWeight: 300 !global
+    $mainFont: 'Myriad Pro' !global 
     font:
         family: $mainFont
-        weight: $mainFontWeight
+        weight: 300
  
 
 body 
-   background-color: #ffffff 
+   background-color: #ffffff
+   font-family: $mainFont
    
-ul 
-   list-style-type: none
-   list-style-position: outside 
-
 a
    text-decoration: none 
    color: inherit
+
+h1
+   font-weight: 900
+   text-transform: uppercase
+   font-size: 2.9rem 
+
+h2
+   font-weight: 700
+   font-size: 2.1rem
+
+h3
+   font-weight: 600     
+
+.notFrameworkBtn
+    background-color: $mainColor
+    border-radius: 30px
+    display: inline-block
+    cursor: pointer 
+    text-transform: uppercase 
+    width: 278px
+    height: 48px
+    font-size: 1.5rem
+    font-weight: 600
+
+    &:active
+        background-color: $mainColorTwo
+
+    &:hover
+        background-color: $mainColor
+
+ul 
+   list-style-type: none
+   list-style-position: outside  
 
 .header__image
     width: 100vw
@@ -28,6 +62,15 @@ a
     justify-content: space-between
     padding: 8%
 
+.header__textContainer    
+    padding: 3% 6%
+    display: grid
+
+.header__button
+    margin: 6% auto
+    width: 80vw
+
+
 .navContainer
     position: absolute
     width: 100vw
@@ -35,13 +78,12 @@ a
     top: 0vh
     height: 616px
     background-color: #ffffff
-    display: block
+    display: none
 
     &__headerContainer
         display: flex
         justify-content: space-between
-        padding: 8%
-        padding-top: 3%
+        padding: 11% 8% 
     
     .mobileMenu:hover &
         display: block
@@ -55,71 +97,12 @@ a
     font:
         family: $mainFont
         size: 2.5rem
-        weight: $mainFontWeight + 100
+        weight: 400
 
 
-
-
-.header__text
-    margin: 10px 0 0 10px 
  
 
-.margin_both-height_3px 
-    margin: 3px 0 
 
 
-
-.h1 
-    font-size: 16px 
-    line-height: 1.2 
-    font-weight: 900
-    text-align: justify 
-    font-stretch: 100%  
-    color: #000000 
- 
-
-.h3 
-    font-size: 12px 
-    line-height: 1.2 
-    font-weight: 700 
-    color: #000000 
-
-
-
-
-
-@font-face 
-    font-family: "Myriad Pro"  
-    src: url("../fonts/MyriadPro/MyriadPro-Light.otf") format("opentype")  
-    font-style: normal  
-    font-weight: 300  
- 
-
-@font-face 
-    font-family: "Myriad Pro"  
-    src: url("../fonts/MyriadPro/MYRIADPRO-REGULAR.OTF") format("opentype")  
-    font-style: normal  
-    font-weight: 400  
-  
-
-@font-face 
-    font-family: "Myriad Pro"   
-    src: url("../fonts/MyriadPro/MYRIADPRO-SEMIBOLD.OTF") format("opentype")  
-    font-style: normal  
-    font-weight: 600  
- 
-
-@font-face 
-    font-family: "Myriad Pro"  
-    src: url("../fonts/MyriadPro/MYRIADPRO-BOLD.OTF") format("opentype")  
-    font-style: normal  
-    font-weight: 700  
- 
-
-@font-face 
-    font-family: "Myriad Pro"  
-    src: url("../fonts/MyriadPro/Myriad-Pro-Black.ttf") format("truetype")  
-    font-style: normal  
-    font-weight: 900 
 
  
