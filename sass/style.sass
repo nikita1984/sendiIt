@@ -1,7 +1,10 @@
 html 
     background-color: #00539F 
-    font-size: 6px 
-    font-family: 'Myriad Pro' 
+    font-size: 12px
+    $mainFont: 'Myriad Pro' !global
+    font:
+        family: $mainFont
+        weight: 300 
  
 
 body 
@@ -28,18 +31,25 @@ ul
     height: 616px
     background-color: #ffffff
     display: block
+
+    &__headerContainer
+        display: flex
+        justify-content: space-between
+        padding: 8%
     
     .mobileMenu:hover &
         display: block
 
-.navContainer__headerContainer
-    display: flex
-    justify-content: space-between
-    padding: 8%
+    &__menuCloseContainer
+        padding-top: 4%
 
-.navContainer__menuCloseContainer
-    padding-top: 4%
-
+.nav
+    color: #000000
+    line-height: 2.05
+    font:
+        family: $mainFont
+        size: 2.5rem
+        weight: 400
 
 
 
@@ -72,16 +82,7 @@ ul
 
 
 
-.nav
-    color: #ffffff
-    font-family: 'Myriad Pro'
-    font-size: 9px
-    line-height: 2.05
-    font-weight: 400
 
-.nav > ul
-    position: absolute
-    left: -25%
 
 @font-face 
     font-family: "Myriad Pro"  
