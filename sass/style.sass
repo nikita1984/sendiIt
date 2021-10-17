@@ -5,10 +5,14 @@
     width: 100vw
     min-height:  100vw * 0.875
     background: url('../images/header_mobile_background.png') no-repeat
-    background-size: cover
+    background-size: cover 
     display: flex
     justify-content: space-between
     padding: 8%
+
+    @media screen and (min-width: 768px)
+        background: url('../images/header_tablet_background.jpg') no-repeat
+        background-size: contain
 
 .header__textContainer    
     padding: 3% 6%
