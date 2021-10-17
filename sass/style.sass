@@ -17,6 +17,8 @@
 .header__textContainer    
     padding: 3% 6%
     display: block
+    @media screen and (min-width: 768px)
+        display: none
 
 .header__button
     margin: 6% auto
@@ -51,7 +53,7 @@
         weight: 400
 
 .nav-big
-    display: none
+    display: block
     color: #ffffff
     padding
     font:
@@ -63,10 +65,9 @@
         width: 107% 
         display: flex
         justify-content: space-between      
-        
 
-    @media screen and (min-width: 768px)
-        display: block
+    @media screen and (max-width: 767px)
+        display: none
 
 @media screen and (min-width: 768px)
     .mobileMenu
