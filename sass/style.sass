@@ -1,56 +1,5 @@
 @import _fonts.sass
-
-$mainColor: #008DCD
-$mainColorTwo: #94D1EC
-
-html 
-    background-color: #00539F 
-    font-size: 12px
-    $mainFont: 'Myriad Pro' !global 
-    font:
-        family: $mainFont
-        weight: 300
- 
-body 
-   background-color: #ffffff
-   font-family: $mainFont
-   
-a
-   text-decoration: none 
-   color: inherit
-
-h1
-   font-weight: 900
-   text-transform: uppercase
-   font-size: 2.9rem 
-
-h2
-   font-weight: 700
-   font-size: 2.1rem
-
-h3
-   font-weight: 600     
-
-.notFrameworkBtn
-    background-color: $mainColor
-    border-radius: 30px
-    display: inline-block
-    cursor: pointer 
-    text-transform: uppercase 
-    width: 278px
-    height: 48px
-    font-size: 1.5rem
-    font-weight: 600
-
-    &:active
-        background-color: $mainColorTwo
-
-    &:hover
-        background-color: $mainColor
-
-ul 
-   list-style-type: none
-   list-style-position: outside  
+@import _global.sass
 
 .header__image
     width: 100vw
@@ -68,7 +17,6 @@ ul
 .header__button
     margin: 6% auto
     width: 80vw
-
 
 .navContainer
     position: absolute
