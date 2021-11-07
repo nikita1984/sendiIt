@@ -29,8 +29,9 @@
   font-weight: 900;
 }
 html {
-  background-color: #00539F;
+  background-color: blue;
   font-size: 12px;
+  margin: auto;
   font-family: "Myriad Pro";
   font-weight: 300;
 }
@@ -91,6 +92,10 @@ ul {
 
 .absolute {
   position: absolute;
+}
+
+.root {
+  margin: auto;
 }
 
 .relative {
@@ -307,7 +312,8 @@ main {
 }
 
 .sendIt-icon {
-  top: -10vw;
+  bottom: 25vw;
+  left: 34vw;
 }
 .sendIt-icon > img {
   width: 26vw;
