@@ -48,97 +48,12 @@ a {
 h1 {
   font-weight: 900;
   text-transform: uppercase;
-  font-size: 2.9rem;
+  font-size: 10.3vw;
 }
 
 h2 {
   font-weight: 700;
-  font-size: 2.1rem;
-}
-
-h3 {
-  font-weight: 600;
-}
-
-.notFrameworkBtn {
-  background-color: #008DCD;
-  border-radius: 30px;
-  display: inline-block;
-  cursor: pointer;
-  text-transform: uppercase;
-  width: 278px;
-  height: 48px;
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-.notFrameworkBtn:active {
-  background-color: #94D1EC;
-}
-.notFrameworkBtn:hover {
-  background-color: #008DCD;
-}
-
-ul {
-  list-style-type: none;
-  list-style-position: outside;
-}
-
-@font-face {
-  font-family: "Myriad Pro";
-  src: url("../fonts/MyriadPro/MyriadPro-Light.otf") format("opentype");
-  font-style: normal;
-  font-weight: 300;
-}
-@font-face {
-  font-family: "Myriad Pro";
-  src: url("../fonts/MyriadPro/MYRIADPRO-REGULAR.OTF") format("opentype");
-  font-style: normal;
-  font-weight: 400;
-}
-@font-face {
-  font-family: "Myriad Pro";
-  src: url("../fonts/MyriadPro/MYRIADPRO-SEMIBOLD.OTF") format("opentype");
-  font-style: normal;
-  font-weight: 600;
-}
-@font-face {
-  font-family: "Myriad Pro";
-  src: url("../fonts/MyriadPro/MYRIADPRO-BOLD.OTF") format("opentype");
-  font-style: normal;
-  font-weight: 700;
-}
-@font-face {
-  font-family: "Myriad Pro";
-  src: url("../fonts/MyriadPro/Myriad-Pro-Black.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 900;
-}
-html {
-  background-color: #00539F;
-  font-size: 12px;
-  font-family: "Myriad Pro";
-  font-weight: 300;
-}
-
-body {
-  background-color: #ffffff;
-  font-family: "Myriad Pro";
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-h1 {
-  font-weight: 900;
-  text-transform: uppercase;
-  font-size: 2.9rem;
-}
-
-h2 {
-  font-weight: 700;
-  font-size: 2.1rem;
+  font-size: 7.7vw;
 }
 
 h3 {
@@ -196,12 +111,12 @@ ul {
   }
 }
 
-.header__textContainer {
+.header__textContainer_mobile {
   padding: 3% 6%;
   display: block;
 }
 @media screen and (min-width: 768px) {
-  .header__textContainer {
+  .header__textContainer_mobile {
     display: none;
   }
 }
@@ -255,7 +170,7 @@ ul {
 }
 
 .header__button {
-  margin: 6% auto;
+  margin: 6% 5%;
   width: 80vw;
 }
 .header__button_big {
@@ -358,10 +273,6 @@ ul {
     height: 46px;
   }
 }
-main {
-  color: f7f7f7;
-}
-
 main {
   background-color: f7f7f7;
   background-color: black;
