@@ -83,6 +83,14 @@ ul {
   list-style-position: outside;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
 .header__image {
   width: 100vw;
   min-height: 87.5vw;
@@ -122,7 +130,6 @@ ul {
 }
 
 .header__textContainer_big {
-  position: absolute;
   top: 12.6vw;
   left: 4.2vw;
   color: white;
@@ -242,7 +249,6 @@ ul {
 }
 
 .navContainer {
-  position: absolute;
   width: 100vw;
   right: 0vw;
   top: 0vh;
@@ -276,46 +282,92 @@ ul {
 main {
   background-color: f7f7f7;
   background-color: black;
+  padding-top: 7vw;
 }
 
-.logoArea {
-  width: 80vw;
+.main__iconArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: inline-block;
+  padding: 0 6.5vw;
+  margin-bottom: 20vw;
+  background: green;
+}
+
+.main__iconArea_area {
+  width: 87vw;
 }
 
 .sendIt-icon {
-  width: 30vw;
+  top: -10vw;
+}
+.sendIt-icon > img {
+  width: 26vw;
 }
 
 .bringo-icon {
-  width: 10vw;
+  top: 173vw;
+  left: 25vw;
+}
+.bringo-icon > img {
+  width: 11vw;
 }
 
 .dpd-icon {
-  width: 10vw;
+  top: 177vw;
+  left: 8vw;
+}
+.dpd-icon > img {
+  width: 15vw;
 }
 
 .cdek-icon {
-  width: 10vw;
+  top: 183vw;
+  left: 24vw;
+}
+.cdek-icon > img {
+  width: 12vw;
 }
 
 .pony-icon {
-  width: 10vw;
+  top: 187vw;
+  left: 9vw;
+}
+.pony-icon > img {
+  width: 14.5vw;
 }
 
 .tnt-icon {
-  width: 10vw;
+  top: 169vw;
+  right: 27vw;
+}
+.tnt-icon > img {
+  width: 15vw;
 }
 
 .cityExpress-icon {
-  width: 10vw;
+  top: 100vw;
+  right: 31vw;
+}
+.cityExpress-icon > img {
+  width: 11vw;
 }
 
 .ups-icon {
+  top: 100vw;
+  right: 18vw;
+}
+.ups-icon > img {
   width: 10vw;
 }
 
 .spsr-icon {
-  width: 10vw;
+  top: 100vw;
+  right: 30vw;
+}
+.spsr-icon > img {
+  width: 12.1vw;
 }
 
 /*# sourceMappingURL=style.css.map */
