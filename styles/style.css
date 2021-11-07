@@ -291,9 +291,19 @@ ul {
   }
 }
 main {
-  background-color: f7f7f7;
   background-color: black;
-  padding-top: 7vw;
+  background-color: #F7F7F7;
+  height: 118vw;
+}
+@media screen and (min-width: 375px) {
+  main {
+    height: 115vw;
+  }
+}
+@media screen and (min-width: 425px) {
+  main {
+    height: 112vw;
+  }
 }
 
 .main__iconArea {
@@ -304,7 +314,6 @@ main {
   padding: 0 6.5vw;
   padding-top: 6vw;
   margin-bottom: 20vw;
-  background: green;
 }
 
 .main__iconArea_area {
@@ -384,10 +393,11 @@ main {
 }
 
 .main__aboutUsContainer {
+  bottom: 110vw;
   padding: 8vw;
 }
 .main__aboutUsContainer > button {
-  width: 84vw;
+  width: 83vw;
 }
 
 /*# sourceMappingURL=style.css.map */
