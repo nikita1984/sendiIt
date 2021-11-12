@@ -33,12 +33,21 @@
         top: 21%
         left: 4%
        
-        & > h1
-            font-size: 5.8vw
+.header__h1_mobile
+    @media screen and (min-width: 768px)
+        display: none
 
-        & > h2
-            font-size: 3.7vw
-            margin-top: 4.3%
+.header__h1_big
+    font-size: 5.8vw
+    @media screen and (max-width: 767px)
+        display: none
+
+.header__h2
+    @media screen and (min-width: 768px)
+        font-size: 3.7vw
+        margin-top: 4.3% 
+    @media screen and (min-width: 1024px)
+        font-size: 2.5vw         
 
 .header__button
     margin: 6% 5%
@@ -47,6 +56,11 @@
         margin: 0%
         margin-top: 8.1%
         width: 70%
+        
+
+
+
+
 
 .header__textContainer_big
     top: 12.6vw
@@ -83,8 +97,9 @@
     @media screen and (max-width: 1023px)
         display: none
 
-.header__button
 
+
+.header__button
     &_big
         width: 35vw
         margin-top: 6vw
@@ -97,6 +112,12 @@
             word-spacing: 0.5vw
             letter-spacing: 0.2vw
 
+
+
+
+
+
+
 .logo 
     width: 30vw
 
@@ -105,6 +126,17 @@
 
     @media screen and (min-width: 768px)
         width: 15vw        
+
+.mobileMenu 
+    width: 10vw
+
+    & > img
+        width: 100%
+
+    @media screen and (min-width: 768px)
+        display: none
+
+
 
 .nav
     color: #000000
@@ -172,11 +204,3 @@
         padding-top: 4%
 
 
-.mobileMenu 
-    width: 10vw
-
-    & > img
-        width: 100%
-
-    @media screen and (min-width: 768px)
-        display: none
