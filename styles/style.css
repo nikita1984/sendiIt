@@ -126,7 +126,27 @@ ul {
 }
 @media screen and (min-width: 768px) {
   .header__textContainer_mobile {
-    display: none;
+    color: white;
+    position: absolute;
+    top: 10vw;
+    left: -2vw;
+  }
+  .header__textContainer_mobile > h1 {
+    font-size: 5.8vw;
+  }
+  .header__textContainer_mobile > h2 {
+    font-size: 3.7vw;
+    margin-top: 2.5vw;
+  }
+}
+
+.header__button {
+  margin: 6% 5%;
+  width: 80vw;
+}
+@media screen and (min-width: 768px) {
+  .header__button {
+    width: 30vw;
   }
 }
 
@@ -177,10 +197,6 @@ ul {
   }
 }
 
-.header__button {
-  margin: 6% 5%;
-  width: 80vw;
-}
 .header__button_big {
   width: 35vw;
   margin-top: 6vw;
@@ -201,6 +217,11 @@ ul {
 }
 .logo > a > img {
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    width: 15vw;
+  }
 }
 
 .nav {
