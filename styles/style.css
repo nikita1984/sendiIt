@@ -120,18 +120,24 @@ ul {
   }
 }
 
-.header__textContainer_mobile {
+.header__textContainer {
   padding: 3% 6%;
   display: block;
 }
 @media screen and (min-width: 768px) {
-  .header__textContainer_mobile {
+  .header__textContainer {
     color: white;
     width: 53vw;
     position: absolute;
     padding: 0%;
     top: 21%;
     left: 4%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header__textContainer {
+    top: 20%;
+    left: 10%;
   }
 }
 
@@ -149,7 +155,15 @@ ul {
     display: none;
   }
 }
+@media screen and (min-width: 1024px) {
+  .header__h1_tablet {
+    display: none;
+  }
+}
 
+.header__h1_desctop {
+  font-size: 3.3vw;
+}
 @media screen and (max-width: 1023px) {
   .header__h1_desctop {
     display: none;
@@ -179,63 +193,11 @@ ul {
     width: 70%;
   }
 }
-
-.header__textContainer_big {
-  top: 12.6vw;
-  left: 4.2vw;
-  color: white;
-}
-.header__textContainer_big > h2 {
-  font-size: 3.7vw;
-  margin-top: 1rem;
-}
 @media screen and (min-width: 1024px) {
-  .header__textContainer_big > h2 {
-    font-size: 2.5vw;
-  }
-}
-@media screen and (max-width: 767px) {
-  .header__textContainer_big {
-    display: none;
-  }
-}
-@media screen and (min-width: 1023px) {
-  .header__textContainer_big {
-    top: 10vw;
-    left: 10vw;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .header__appealSpan_tablet {
-    display: none;
-  }
-}
-.header__appealSpan_tablet > h1 {
-  font-size: 5.7vw;
-}
-
-.header__appealSpan_desctop {
-  margin-bottom: 2%;
-}
-.header__appealSpan_desctop > h1 {
-  font-size: 3.3vw;
-}
-@media screen and (max-width: 1023px) {
-  .header__appealSpan_desctop {
-    display: none;
-  }
-}
-
-.header__button_big {
-  width: 35vw;
-  margin-top: 6vw;
-}
-@media screen and (min-width: 1024px) {
-  .header__button_big {
-    width: 25vw;
-    margin-top: 3.3vw;
-    height: 3.3vw;
+  .header__button {
+    width: 47%;
+    margin-top: 4%;
+    height: 3.3%;
     font-size: 1vw;
     word-spacing: 0.5vw;
     letter-spacing: 0.2vw;
@@ -254,23 +216,23 @@ ul {
   }
 }
 
-.mobileMenu {
+.mobileMenuIcon {
   width: 10vw;
 }
-.mobileMenu > img {
+.mobileMenuIcon > img {
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .mobileMenu {
+  .mobileMenuIcon {
     display: none;
   }
 }
 
-.nav {
+.nav_mobile {
   color: #000000;
   line-height: 1.9;
   font-family: "Myriad Pro";
-  font-size: 2.5rem;
+  font-size: 12vw;
   font-weight: 400;
 }
 
@@ -333,7 +295,7 @@ ul {
   justify-content: space-between;
   padding: 11% 8%;
 }
-.mobileMenu:hover .navContainerMobile {
+.mobileMenuIcon:hover .navContainerMobile {
   display: block;
 }
 .navContainerMobile__menuCloseContainer {

@@ -21,10 +21,9 @@
         margin: 0 auto
         padding: 3vw 9vw
 
-.header__textContainer_mobile
+.header__textContainer
     padding: 3% 6%
     display: block
-
     @media screen and (min-width: 768px)
         color: white
         width: 53vw
@@ -32,6 +31,9 @@
         padding: 0%
         top: 21%
         left: 4%
+    @media screen and (min-width: 1024px)
+        top: 20%
+        left: 10%     
        
 .header__h1_mobile
     @media screen and (min-width: 768px)
@@ -39,10 +41,15 @@
 
 .header__h1_tablet
     font-size: 5.8vw
-    @media screen and (max-width: 767px)
+    @media screen and (max-width: 767px) 
         display: none
 
+    @media screen and (min-width: 1024px) 
+        display: none    
+
 .header__h1_desctop
+    font-size: 3.3vw
+
     @media screen and (max-width: 1023px)
         display: none        
 
@@ -60,67 +67,13 @@
         margin: 0%
         margin-top: 8.1%
         width: 70%
-        
-
-
-
-
-
-.header__textContainer_big
-    top: 12.6vw
-    left: 4.2vw
-    color: white
-
-    & > h2
-        font-size: 3.7vw
-        margin-top: 1rem
-
-        @media screen and (min-width: 1024px)
-            font-size: 2.5vw
-
-    @media screen and (max-width: 767px)
-        display: none
-
-    @media screen and (min-width: 1023px) 
-        top: 10vw
-        left: 10vw
-
-.header__appealSpan_tablet
-    @media screen and (min-width: 1024px)
-        display: none
-
-    & > h1
-        font-size: 5.7vw
-
-.header__appealSpan_desctop
-    margin-bottom: 2%
-
-    & > h1
-        font-size: 3.3vw
-
-    @media screen and (max-width: 1023px)
-        display: none
-
-
-
-.header__button
-    &_big
-        width: 35vw
-        margin-top: 6vw
-
-        @media screen and (min-width: 1024px) 
-            width: 25vw
-            margin-top: 3.3vw
-            height: 3.3vw
-            font-size: 1vw
-            word-spacing: 0.5vw
-            letter-spacing: 0.2vw
-
-
-
-
-
-
+    @media screen and (min-width: 1024px) 
+        width: 47%
+        margin-top: 4%
+        height: 3.3%
+        font-size: 1vw
+        word-spacing: 0.5vw
+        letter-spacing: 0.2vw    
 
 .logo 
     width: 30vw
@@ -131,7 +84,7 @@
     @media screen and (min-width: 768px)
         width: 15vw        
 
-.mobileMenu 
+.mobileMenuIcon 
     width: 10vw
 
     & > img
@@ -140,16 +93,13 @@
     @media screen and (min-width: 768px)
         display: none
 
-
-
-.nav
+.nav_mobile
     color: #000000
     line-height: 1.9
     font:
         family: $mainFont
-        size: 2.5rem
+        size: 12vw
         weight: 400
-        
 
 .nav_big
     color: #ffffff
@@ -201,7 +151,7 @@
         justify-content: space-between
         padding: 11% 8% 
     
-    .mobileMenu:hover &
+    .mobileMenuIcon:hover &
         display: block
 
     &__menuCloseContainer
