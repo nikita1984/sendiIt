@@ -141,11 +141,17 @@ ul {
   }
 }
 
-.header__h1_big {
+.header__h1_tablet {
   font-size: 5.8vw;
 }
 @media screen and (max-width: 767px) {
-  .header__h1_big {
+  .header__h1_tablet {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .header__h1_desctop {
     display: none;
   }
 }
