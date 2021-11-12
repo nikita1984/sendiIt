@@ -240,18 +240,13 @@ ul {
   color: #ffffff;
   width: 100%;
   font-family: "Myriad Pro";
-  font-size: 1rem;
+  font-size: 2.2vw;
   font-weight: 300;
   font-position: fixed;
 }
 .nav_big > ul {
   display: flex;
   justify-content: space-between;
-}
-@media screen and (min-width: 1440px) {
-  .nav_big > ul {
-    justify-content: space-around;
-  }
 }
 .nav_big > ul > li > a:hover {
   font-weight: 400;
@@ -270,14 +265,8 @@ ul {
 }
 @media screen and (min-width: 1023px) {
   .nav_big {
-    margin-top: 1%;
-    margin-left: 7vw;
-  }
-}
-@media screen and (min-width: 1440px) {
-  .nav_big {
-    margin-top: 0.8%;
-    font-size: 2.3rem;
+    font-size: 2vw;
+    margin-left: 7%;
   }
 }
 
