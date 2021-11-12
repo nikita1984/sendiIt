@@ -12,87 +12,89 @@
     <link rel="stylesheet" href="styles/style.css" type = "text/css"> 
 </head>
 <body>
-    <header>
-        <div class="header__image">
-            <a href="index.html"><img  class="logo" src="./images/logo.png" alt="logo.png"></a>
-            <div class="mobileMenu"><img src="./images/mobile_menu.svg" alt="mobile_menu.svg">
-                <div class="navContainer absolute">
-                    <div class="navContainer__headerContainer">
-                        <div><img src="./images/logo_mini_nav.png" alt="logo_mini_nav.png"></div>
-                        <div class="navContainer__menuCloseContainer">
-                            <img class="mobileMenuClose" src="./images/mobile_menu_close.svg" alt="mobile_menu_close.svg">
+    <div class="root">
+        <header>
+            <div class="header__image">
+                <a href="index.html"><img  class="logo" src="./images/logo.png" alt="logo.png"></a>
+                <div class="mobileMenu"><img src="./images/mobile_menu.svg" alt="mobile_menu.svg">
+                    <div class="navContainerMobile">
+                        <div class="navContainerMobile__headerContainer">
+                            <div><img src="./images/logo_mini_nav.png" alt="logo_mini_nav.png"></div>
+                            <div class="navContainerMobile__menuCloseContainer">
+                                <img class="mobileMenuClose" src="./images/mobile_menu_close.svg" alt="mobile_menu_close.svg">
+                            </div>
                         </div>
+                        <nav class="nav">
+                            <ul>
+                                <li><a href="index.html">Главная</a></li>
+                                <li><a href="#">Описания</a></li>
+                                <li><a href="#">Преимущества</a></li>
+                                <li><a href="#">Отзывы</a></li>
+                                <li><a href="#">Партнёры</a></li>
+                                <li><a href="#">Гарантии</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </nav>
                     </div>
-                    <nav class="nav">
-                        <ul>
-                            <li><a href="index.html">Главная</a></li>
-                            <li><a href="#">Описания</a></li>
-                            <li><a href="#">Преимущества</a></li>
-                            <li><a href="#">Отзывы</a></li>
-                            <li><a href="#">Партнёры</a></li>
-                            <li><a href="#">Гарантии</a></li>
-                            <li><a href="#">FAQ</a></li>
-                        </ul>
-                    </nav>
                 </div>
+                <nav class="nav_big">
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="#">Описания</a></li>
+                        <li><a href="#">Преимущества</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Партнёры</a></li>
+                        <li><a href="#">Гарантии</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="nav_big">
-                <ul>
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="#">Описания</a></li>
-                    <li><a href="#">Преимущества</a></li>
-                    <li><a href="#">Отзывы</a></li>
-                    <li><a href="#">Партнёры</a></li>
-                    <li><a href="#">Гарантии</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="header__textContainer_big absolute">
-            <div class="header__appealSpan_tablet">
-                <h1>придумайте что</h1>
-                <h1>отправить</h1>     
+            <div class="header__textContainer_big absolute">
+                <div class="header__appealSpan_tablet">
+                    <h1>придумайте что</h1>
+                    <h1>отправить</h1>     
+                </div>
+                <div class="header__appealSpan_desctop">
+                    <h1>придумайте что отправить</h1>     
+                </div>
+                <h2>А посылка доедет сама</h2>
+                <button type="button" class="btn btn-primary notFrameworkBtn header__button_big">отправить посылку</button>
             </div>
-            <div class="header__appealSpan_desctop">
-                <h1>придумайте что отправить</h1>     
-            </div>
+        </header>
+        <!--  
+        <div class="header__textContainer_mobile">
+            <h1>придумайте</h1>
+            <h1>что отправить</h1>
             <h2>А посылка доедет сама</h2>
-            <button type="button" class="btn btn-primary notFrameworkBtn header__button_big">отправить посылку</button>
+            <button type="button" class="btn btn-primary notFrameworkBtn header__button">отправить посылку</button>
         </div>
-    </header>
-    <!--  
-    <div class="header__textContainer_mobile">
-        <h1>придумайте</h1>
-        <h1>что отправить</h1>
-        <h2>А посылка доедет сама</h2>
-        <button type="button" class="btn btn-primary notFrameworkBtn header__button">отправить посылку</button>
-    </div>
-    
-    <main>
-        <div><h3>Мы – агрегатор служб доставки</h3></div>
-        <div class="main__iconBlock">iconArea
-            <img src="./images/logoArea.svg" alt="logoArea.svg">
-            <img src="./images/sendIt.png" alt="sendIt.png">
-            <img src="./images/bringo.png" alt="bringo.png">
-            <img src="./images/dpd.png" alt="dpd.png">
-            <img src="./images/cdek.png" alt="cdek.png">
-            <img src="./images/pony.png" alt="pony.png">
-            <img src="./images/tnt.png" alt="tnt.png">
-            <img src="./images/cityExpress.png" alt="cityExpress.png">
-            <img src="./images/ups.png" alt="ups.png">
-            <img src="./images/spsr.png" alt="spsr.png">
-        </div>
-        <div class="main__textBlock">
-            <h3>Мы – агрегатор служб доставки</h3>
-            <p>С нами удобно вам, вашим клиентам и курьерским <br> 
-                службам. Для вас наши услуги бесплатны, так как мы <br> 
-                получаем бонусы от служб доставок за <br>
-                предоставленный объем заказов, а вы получаете <br>
-                надежный сервис в подарок!</p>
-            <button type="button" class="btn btn-primary notFrameworkBtn">отправить посылку</button>    
-        </div>
-    </main>
-    <div>footer</div>
-    -->
+        
+        <main>
+            <div><h3>Мы – агрегатор служб доставки</h3></div>
+            <div class="main__iconBlock">iconArea
+                <img src="./images/logoArea.svg" alt="logoArea.svg">
+                <img src="./images/sendIt.png" alt="sendIt.png">
+                <img src="./images/bringo.png" alt="bringo.png">
+                <img src="./images/dpd.png" alt="dpd.png">
+                <img src="./images/cdek.png" alt="cdek.png">
+                <img src="./images/pony.png" alt="pony.png">
+                <img src="./images/tnt.png" alt="tnt.png">
+                <img src="./images/cityExpress.png" alt="cityExpress.png">
+                <img src="./images/ups.png" alt="ups.png">
+                <img src="./images/spsr.png" alt="spsr.png">
+            </div>
+            <div class="main__textBlock">
+                <h3>Мы – агрегатор служб доставки</h3>
+                <p>С нами удобно вам, вашим клиентам и курьерским <br> 
+                    службам. Для вас наши услуги бесплатны, так как мы <br> 
+                    получаем бонусы от служб доставок за <br>
+                    предоставленный объем заказов, а вы получаете <br>
+                    надежный сервис в подарок!</p>
+                <button type="button" class="btn btn-primary notFrameworkBtn">отправить посылку</button>    
+            </div>
+        </main>
+        <div>footer</div>
+        -->
+    </div>    
 </body>
 </html>
