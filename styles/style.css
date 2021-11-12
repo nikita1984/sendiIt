@@ -197,7 +197,10 @@ ul {
 }
 
 .logo {
-  width: 60%;
+  width: 30vw;
+}
+.logo > a > img {
+  width: 100%;
 }
 
 .nav {
@@ -274,11 +277,18 @@ ul {
   padding-top: 4%;
 }
 
+.mobileMenu {
+  width: 10vw;
+}
+.mobileMenu > img {
+  width: 100%;
+}
 @media screen and (min-width: 768px) {
   .mobileMenu {
     display: none;
   }
 }
+
 main {
   background-color: black;
   background-color: #F7F7F7;

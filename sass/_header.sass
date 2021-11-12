@@ -78,8 +78,11 @@
             word-spacing: 0.5vw
             letter-spacing: 0.2vw
 
-.logo
-    width: 60%
+.logo 
+    width: 30vw
+
+    & > a > img
+        width: 100%
 
 .nav
     color: #000000
@@ -146,6 +149,12 @@
     &__menuCloseContainer
         padding-top: 4%
 
-@media screen and (min-width: 768px)
-    .mobileMenu
+
+.mobileMenu 
+    width: 10vw
+
+    & > img
+        width: 100%
+
+    @media screen and (min-width: 768px)
         display: none
