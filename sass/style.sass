@@ -4,5 +4,35 @@
 
 main
     width: 100%
-    background-color: black
+    padding: 5%
     background-color: #F7F7F7
+    background-color: wheat
+
+.main__h2
+    font-size: 3.7vw
+    @media screen and (max-width: 767px) 
+        display: none
+
+.main__h3
+    @media screen and (min-width: 768px)
+        display: none
+
+.main__iconBlock
+    background: green
+    height: 50vw
+    @media screen and (min-width: 768px)
+        width: 80% 
+        height: inherit
+
+.main__container
+    @media screen and (min-width: 768px)  
+        display: flex
+        flex-direction: row-reverse
+        justify-content: space-between
+
+.main__p
+    font-size: 2.6vw
+
+.main__textBlock
+    @media screen and (min-width: 768px) 
+        height: 100%
