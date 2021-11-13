@@ -309,13 +309,7 @@ main {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .main__h2 {
     display: inline;
-    font-size: 3.7vw;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .main__h3 {
-    display: none;
+    font-size: 4.5vw;
   }
 }
 
@@ -325,7 +319,8 @@ main {
 }
 @media screen and (min-width: 768px) {
   .main__iconBlock {
-    width: 80%;
+    width: 60%;
+    padding-left: 2%;
     height: inherit;
   }
 }
@@ -334,13 +329,18 @@ main {
   .main__container {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
 }
 
 .main__p {
   font-size: 3.6vw;
   color: black;
+}
+@media screen and (min-width: 768px) {
+  .main__p {
+    font-size: 1.8vw;
+  }
 }
 
 .main__button {
@@ -354,12 +354,19 @@ main {
 }
 @media screen and (min-width: 768px) {
   .main__textBlock {
-    height: 100%;
+    width: 40%;
+    background: red;
+    margin: 0;
   }
 }
 
 .main__textBlock-h2 {
   font-size: 5.8vw;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .main__textBlock-h2 {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

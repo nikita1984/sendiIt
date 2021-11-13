@@ -12,28 +12,27 @@ main
     display: none
     @media screen and (min-width: 768px) and (max-width: 1023px)
         display: inline
-        font-size: 3.7vw
-
-.main__h3
-    @media screen and (min-width: 768px) and (max-width: 1023px)
-        display: none
+        font-size: 4.5vw
 
 .main__iconBlock
     background: green
     height: 50vw
     @media screen and (min-width: 768px)
-        width: 80% 
+        width: 60%
+        padding-left: 2% 
         height: inherit
 
 .main__container
     @media screen and (min-width: 768px)  
         display: flex
         flex-direction: row-reverse
-        justify-content: space-between
-
+        justify-content: flex-end
+        
 .main__p
     font-size: 3.6vw
     color: black
+    @media screen and (min-width: 768px)
+        font-size: 1.8vw
 
 .main__button
     width: 100%
@@ -43,7 +42,11 @@ main
     margin-top: 5vw
     margin-bottom: 1vw
     @media screen and (min-width: 768px) 
-        height: 100%
+        width: 40%
+        background: red
+        margin: 0
 
 .main__textBlock-h2
-    font-size: 5.8vw       
+    font-size: 5.8vw
+    @media screen and (min-width: 768px) and (max-width: 1023px)
+        display: none       
