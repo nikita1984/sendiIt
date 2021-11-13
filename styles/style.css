@@ -116,6 +116,7 @@ ul {
   .header__image {
     background: url("../images/header_desktop_background.jpg") no-repeat;
     background-size: contain;
+    min-height: 36.3vw;
     margin: 0 auto;
     padding: 3% 9%;
   }
@@ -303,15 +304,16 @@ main {
 }
 
 .main__h2 {
-  font-size: 3.7vw;
+  display: none;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .main__h2 {
-    display: none;
+    display: inline;
+    font-size: 3.7vw;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .main__h3 {
     display: none;
   }
