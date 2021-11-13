@@ -68,7 +68,7 @@ p {
 }
 
 .root {
-  width: 100vw;
+  width: 100%;
 }
 
 .notFrameworkBtn {
@@ -138,6 +138,7 @@ ul {
 @media screen and (min-width: 1024px) {
   .header__textContainer {
     top: 20%;
+    top: 11.2vw;
     left: 9%;
   }
 }
