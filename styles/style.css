@@ -89,6 +89,17 @@ p {
   background-color: #008DCD;
 }
 
+.notFrameworkContainer {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+@media screen and (min-width: 768px) {
+  .notFrameworkContainer {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+
 ul {
   list-style-type: none;
   list-style-position: outside;
@@ -298,7 +309,8 @@ ul {
 
 main {
   width: 100%;
-  padding: 5% 6%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   background-color: #F7F7F7;
   background-color: wheat;
 }
@@ -319,8 +331,8 @@ main {
 }
 @media screen and (min-width: 768px) {
   .main__iconBlock {
-    width: 60%;
-    padding-left: 2%;
+    width: 62%;
+    padding-left: 2.5%;
     height: inherit;
   }
 }
@@ -354,7 +366,7 @@ main {
 }
 @media screen and (min-width: 768px) {
   .main__textBlock {
-    width: 40%;
+    width: 38%;
     background: red;
     margin: 0;
   }
