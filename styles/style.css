@@ -188,8 +188,8 @@ ul {
 }
 
 .header__button {
-  margin: 6% 5%;
-  width: 80vw;
+  margin: 6% 0%;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .header__button {
@@ -298,7 +298,7 @@ ul {
 
 main {
   width: 100%;
-  padding: 5%;
+  padding: 5% 6%;
   background-color: #F7F7F7;
   background-color: wheat;
 }
@@ -339,13 +339,27 @@ main {
 }
 
 .main__p {
-  font-size: 2.6vw;
+  font-size: 3.6vw;
+  color: black;
 }
 
+.main__button {
+  width: 100%;
+  margin-top: 1vw;
+}
+
+.main__textBlock {
+  margin-top: 5vw;
+  margin-bottom: 1vw;
+}
 @media screen and (min-width: 768px) {
   .main__textBlock {
     height: 100%;
   }
+}
+
+.main__textBlock-h2 {
+  font-size: 5.8vw;
 }
 
 /*# sourceMappingURL=style.css.map */
