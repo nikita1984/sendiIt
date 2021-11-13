@@ -1,9 +1,11 @@
 $mainColor: #008DCD
 $mainColorTwo: #94D1EC
 $mainFont: null
+$desctopButtonHeight: 2.8vw
 
 html
    background: black
+   background: inherit
    font-size: 100%
    $mainFont: 'Myriad Pro' !global 
    margin: auto
@@ -14,6 +16,7 @@ html
 
 body
    background: blue
+   background: inherit
    font-family: $mainFont
    
 a
@@ -63,6 +66,10 @@ p
    @media screen and (min-width: 768px)
       padding-left: 4%
       padding-right: 4%
+   @media screen and (min-width: 1024px)
+      padding-left: 9%
+      padding-right: 9%
+   
 
 ul 
    list-style-type: none

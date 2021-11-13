@@ -2,6 +2,9 @@
 @import _global.sass
 @import _header.sass
 
+.iconBlock__logoArea > img
+    width: 100%
+
 main
     width: 100%
     padding-top: 5%
@@ -16,12 +19,10 @@ main
         font-size: 4.5vw
 
 .main__iconBlock
-    background: green
-    height: 50vw
+    background: #d7c2c2
     @media screen and (min-width: 768px)
         width: 62%
         padding-left: 2.5% 
-        height: inherit
 
 .main__container
     @media screen and (min-width: 768px)  
@@ -34,10 +35,18 @@ main
     color: black
     @media screen and (min-width: 768px)
         font-size: 1.8vw
+    @media screen and (min-width: 1024px)
+        font-size: 1.15vw    
 
 .main__button
     width: 100%
     margin-top: 1vw
+    @media screen and (min-width: 1024px)
+        width: 82%
+        height: $desctopButtonHeight
+        font-size: 1vw
+        word-spacing: 0.5vw
+        letter-spacing: 0.2vw 
 
 .main__textBlock
     margin-top: 5vw
@@ -45,9 +54,12 @@ main
     @media screen and (min-width: 768px) 
         width: 38%
         background: red
+        background: inherit
         margin: 0
 
 .main__textBlock-h2
     font-size: 5.8vw
     @media screen and (min-width: 768px) and (max-width: 1023px)
         display: none       
+    @media screen and (min-width: 1024px)
+        font-size: 2.5vw 
