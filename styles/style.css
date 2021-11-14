@@ -316,19 +316,6 @@ ul {
   padding-top: 4%;
 }
 
-.iconBlock__logoArea > img {
-  width: 100%;
-}
-
-.iconBlock__sendItMan {
-  top: 28%;
-  left: 36%;
-  width: 30%;
-}
-.iconBlock__sendItMan > img {
-  width: 100%;
-}
-
 main {
   width: 100%;
   padding-top: 5%;
@@ -351,8 +338,11 @@ main {
   position: relative;
   background: #d7c2c2;
   border-color: #d7c2c2;
-  border-style: solid;
+  border-bottom-style: solid;
   border-bottom-width: 10vw;
+}
+.main__iconBlock > div:not(:first-child) {
+  position: absolute;
 }
 @media screen and (min-width: 768px) {
   .main__iconBlock {
@@ -360,8 +350,29 @@ main {
     padding-left: 2.5%;
   }
 }
-.main__iconBlock > div:not(:first-child) {
-  position: absolute;
+@media screen and (min-width: 768px) {
+  .main__iconBlock {
+    border: none;
+  }
+}
+
+.main__iconBlock__logoArea > img {
+  width: 100%;
+}
+
+.main__iconBlock__sendItMan {
+  top: 28%;
+  left: 36%;
+  width: 30%;
+}
+.main__iconBlock__sendItMan > img {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .main__iconBlock__sendItMan {
+    top: 22%;
+    left: 40%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -390,6 +401,13 @@ main {
 .main__button {
   width: 100%;
   margin-top: 1vw;
+  margin-top: 1%;
+}
+@media screen and (min-width: 768px) {
+  .main__button {
+    margin-top: 3vw;
+    margin-top: 8.7%;
+  }
 }
 @media screen and (min-width: 1024px) {
   .main__button {
