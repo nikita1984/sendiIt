@@ -8,6 +8,16 @@ $mainFont: 'Myriad Pro'
    word-spacing: 0.5vw
    letter-spacing: 0.2vw
 
+@mixin containerHorisontalPadding
+   padding-left: 5%
+   padding-right: 5%
+   @media screen and (min-width: 768px)
+      padding-left: 4%
+      padding-right: 4%
+   @media screen and (min-width: 1024px)
+      padding-left: 9%
+      padding-right: 9%
+
 
 html
    background: black

@@ -320,12 +320,26 @@ main {
   padding-top: 5%;
   padding-bottom: 5%;
   background-color: #F7F7F7;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 @media screen and (min-width: 768px) {
   main {
     border-color: #F7F7F7;
     border-bottom-style: solid;
     border-bottom-width: 2vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  main {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main {
+    padding-left: 9%;
+    padding-right: 9%;
   }
 }
 
