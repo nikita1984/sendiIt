@@ -38,8 +38,8 @@ html {
 }
 
 body {
-  background: blue;
   background: inherit;
+  background: blue;
   font-family: "Myriad Pro";
 }
 
@@ -311,6 +311,11 @@ main {
     border-color: #F7F7F7;
     border-bottom-style: solid;
     border-bottom-width: 2vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  main {
+    margin-top: -0.5vw;
   }
 }
 @media screen and (min-width: 768px) {
