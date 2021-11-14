@@ -3,13 +3,12 @@
 @import _header.sass
 
 main
-    $mainColor: #F7F7F7
     width: 100%
     padding-top: 5%
     padding-bottom: 5%
-    background-color: $mainColor
+    background-color: $mainElementColor
     @media screen and (min-width: 768px)
-        border-color: $mainColor
+        border-color: $mainElementColor
         border-bottom-style: solid
         border-bottom-width: 2vw
     @include containerHorisontalPadding     
@@ -21,9 +20,8 @@ main
         font-size: 4.5vw
 
 .main__iconBlock
-    $iconBlockColor: #d7c2c2
-    background: $iconBlockColor
-    border-color: $iconBlockColor
+    background: $mainElementColor
+    border-color: $mainElementColor
     border-bottom-style: solid
     border-bottom-width: 10vw
     > div:not(:first-child)
@@ -40,10 +38,32 @@ main
         width: 100%
 
 .bringoLogo
-    @include logoAreaPosition (absolute, 13%, 21%, 20%) 
+    @include logoAreaPosition (absolute, 13%, 21%, 20%)
+
+.cityExpressLogo
+    @include logoAreaPosition (absolute, 17%, 29%, 82%)    
+
+.cdekLogo
+    @include logoAreaPosition (absolute, 14%, 49%, 19%)
+
+.dpdLogo
+    @include logoAreaPosition (absolute, 15%, 34%, 2%)
+
+.ponyLogo
+    @include logoAreaPosition (absolute, 16%, 64%, 4%)
+
+.tntLogo
+    @include logoAreaPosition (absolute, 13%, 12%, 62%)
     
 .sendItMan
-    @include logoAreaPosition (absolute, 30%, 28%, 36%)            
+    @include logoAreaPosition (absolute, 30%, 28%, 36%)
+
+.spsrLogo
+    @include logoAreaPosition (absolute, 20%, 63%, 80%)
+
+.upsLogo
+    @include logoAreaPosition (absolute, 14%, 49%, 65%)
+
 
 .main__container
     @media screen and (min-width: 768px)  
