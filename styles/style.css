@@ -222,7 +222,7 @@ ul {
     width: 47%;
     margin-top: 4%;
     height: 3.3%;
-    height: 2.8vw;
+    height: 3.5vw;
     font-size: 1vw;
     word-spacing: 0.5vw;
     letter-spacing: 0.2vw;
@@ -321,7 +321,13 @@ main {
   padding-top: 5%;
   padding-bottom: 5%;
   background-color: #F7F7F7;
-  background-color: wheat;
+}
+@media screen and (min-width: 768px) {
+  main {
+    border-color: #F7F7F7;
+    border-bottom-style: solid;
+    border-bottom-width: 2vw;
+  }
 }
 
 .main__h2 {
@@ -356,23 +362,21 @@ main {
   }
 }
 
+.main__iconBlock__logoArea {
+  position: relative;
+}
 .main__iconBlock__logoArea > img {
   width: 100%;
 }
 
-.main__iconBlock__sendItMan {
+.sendItMan {
+  position: absolute;
   top: 28%;
   left: 36%;
   width: 30%;
 }
-.main__iconBlock__sendItMan > img {
+.sendItMan > img {
   width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .main__iconBlock__sendItMan {
-    top: 22%;
-    left: 40%;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -406,13 +410,13 @@ main {
 @media screen and (min-width: 768px) {
   .main__button {
     margin-top: 3vw;
-    margin-top: 8.7%;
+    margin-top: 1%;
   }
 }
 @media screen and (min-width: 1024px) {
   .main__button {
     width: 82%;
-    height: 2.8vw;
+    height: 3.5vw;
     font-size: 1vw;
     word-spacing: 0.5vw;
     letter-spacing: 0.2vw;
@@ -426,9 +430,13 @@ main {
 @media screen and (min-width: 768px) {
   .main__textBlock {
     width: 38%;
-    background: red;
-    background: inherit;
     margin: 0;
+    padding-top: 2%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main__textBlock {
+    padding-top: 4%;
   }
 }
 

@@ -2,14 +2,16 @@
 @import _global.sass
 @import _header.sass
 
-
-
 main
+    $mainColor: #F7F7F7
     width: 100%
     padding-top: 5%
     padding-bottom: 5%
-    background-color: #F7F7F7
-    background-color: wheat
+    background-color: $mainColor
+    @media screen and (min-width: 768px)
+        border-color: $mainColor
+        border-bottom-style: solid
+        border-bottom-width: 2vw
 
 .main__h2
     display: none
@@ -32,18 +34,18 @@ main
     @media screen and (min-width: 768px)
         border: none  
 
-.main__iconBlock__logoArea > img
-    width: 100%
+.main__iconBlock__logoArea
+    position: relative
+    > img
+        width: 100%
 
-.main__iconBlock__sendItMan 
+.sendItMan
+    position: absolute
     top: 28%
     left: 36%
     width: 30%
     > img
         width: 100%
-    @media screen and (min-width: 768px)
-        top: 22%
-        left: 40%
 
 .main__container
     @media screen and (min-width: 768px)  
@@ -65,7 +67,7 @@ main
     margin-top: 1%
     @media screen and (min-width: 768px)
         margin-top: 3vw
-        margin-top: 8.7%
+        margin-top: 1%
     @media screen and (min-width: 1024px)
         width: 82%
         height: $desctopButtonHeight
@@ -78,9 +80,10 @@ main
     margin-bottom: 1vw
     @media screen and (min-width: 768px) 
         width: 38%
-        background: red
-        background: inherit
         margin: 0
+        padding-top: 2%
+    @media screen and (min-width: 1024px)
+        padding-top: 4%        
 
 .main__textBlock-h2
     font-size: 5.8vw
