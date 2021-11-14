@@ -18,6 +18,15 @@ $mainFont: 'Myriad Pro'
       padding-left: 9%
       padding-right: 9%
 
+@mixin logoAreaPosition ($position, $width, $top: 0, $left: 0, $bottom: 0, $right: 0)
+   position: $position
+   width: $width
+   top: $top
+   left: $left
+   bottom: $bottom
+   right: $right
+   > img
+      width: 100%
 
 html
    background: black
@@ -73,17 +82,6 @@ p
 
     &:hover
         background-color: $mainColor
-
-.notFrameworkContainer
-   padding-left: 5%
-   padding-right: 5%
-   @media screen and (min-width: 768px)
-      padding-left: 4%
-      padding-right: 4%
-   @media screen and (min-width: 1024px)
-      padding-left: 9%
-      padding-right: 9%
-   
 
 ul 
    list-style-type: none

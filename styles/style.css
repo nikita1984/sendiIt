@@ -91,23 +91,6 @@ p {
   background-color: #008DCD;
 }
 
-.notFrameworkContainer {
-  padding-left: 5%;
-  padding-right: 5%;
-}
-@media screen and (min-width: 768px) {
-  .notFrameworkContainer {
-    padding-left: 4%;
-    padding-right: 4%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .notFrameworkContainer {
-    padding-left: 9%;
-    padding-right: 9%;
-  }
-}
-
 ul {
   list-style-type: none;
   list-style-position: outside;
@@ -383,9 +366,11 @@ main {
 
 .bringoLogo {
   position: absolute;
+  width: 13%;
   top: 21%;
   left: 20%;
-  width: 13%;
+  bottom: 0;
+  right: 0;
 }
 .bringoLogo > img {
   width: 100%;
@@ -393,9 +378,11 @@ main {
 
 .sendItMan {
   position: absolute;
+  width: 30%;
   top: 28%;
   left: 36%;
-  width: 30%;
+  bottom: 0;
+  right: 0;
 }
 .sendItMan > img {
   width: 100%;
