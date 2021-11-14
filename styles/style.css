@@ -320,6 +320,15 @@ ul {
   width: 100%;
 }
 
+.iconBlock__sendItMan {
+  top: 28%;
+  left: 36%;
+  width: 30%;
+}
+.iconBlock__sendItMan > img {
+  width: 100%;
+}
+
 main {
   width: 100%;
   padding-top: 5%;
@@ -339,13 +348,20 @@ main {
 }
 
 .main__iconBlock {
+  position: relative;
   background: #d7c2c2;
+  border-color: #d7c2c2;
+  border-style: solid;
+  border-bottom-width: 10vw;
 }
 @media screen and (min-width: 768px) {
   .main__iconBlock {
     width: 62%;
     padding-left: 2.5%;
   }
+}
+.main__iconBlock > div:not(:first-child) {
+  position: absolute;
 }
 
 @media screen and (min-width: 768px) {

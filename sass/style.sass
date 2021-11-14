@@ -5,6 +5,13 @@
 .iconBlock__logoArea > img
     width: 100%
 
+.iconBlock__sendItMan 
+    top: 28%
+    left: 36%
+    width: 30%
+    & > img
+        width: 100%
+
 main
     width: 100%
     padding-top: 5%
@@ -19,10 +26,18 @@ main
         font-size: 4.5vw
 
 .main__iconBlock
-    background: #d7c2c2
+    position: relative
+    $iconBlockColor: #d7c2c2
+    background: $iconBlockColor
+    border-color: $iconBlockColor
+    border-style: solid
+    border-bottom-width: 10vw
     @media screen and (min-width: 768px)
         width: 62%
-        padding-left: 2.5% 
+        padding-left: 2.5%
+    & > div:not(:first-child)
+        position: absolute
+    
 
 .main__container
     @media screen and (min-width: 768px)  
