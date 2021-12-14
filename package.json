@@ -1,30 +1,24 @@
 {
-  "name": "sendiIt",
+  "name": "sendiit",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass --watch sass:styles",
-    "build": "webpack --config webpack.config.js"
+    "sass": "sass --watch sass:styles"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nikita1984/sendiIt.git"
   },
   "keywords": [],
+  "dependencies": {
+    "sass": "^1.43.2"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/nikita1984/sendiIt/issues"
   },
-  "homepage": "https://github.com/nikita1984/sendiIt#readme",
-  "dependencies": {
-    "node-sass": "^6.0.1",
-    "npm": "^8.0.0",
-    "sass": "^1.43.2"
-  },
-  "devDependencies": {
-    "webpack-cli": "^4.9.0"
-  }
+  "homepage": "https://github.com/nikita1984/sendiIt#readme"
 }
