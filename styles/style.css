@@ -67,6 +67,7 @@ h3 {
 p {
   font-weight: 400;
   font-size: 3.6vw;
+  font-size: 72%;
   color: black;
 }
 
@@ -568,6 +569,15 @@ main {
   }
 }
 
+.steps__figure {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .steps__figure {
+    width: 40%;
+  }
+}
+
 .steps__image {
   width: 100%;
   margin-bottom: 5%;
@@ -576,6 +586,7 @@ main {
 .steps__title {
   font-weight: 600;
   font-size: 8.7vw;
+  font-size: 175%;
 }
 
 /*# sourceMappingURL=style.css.map */
