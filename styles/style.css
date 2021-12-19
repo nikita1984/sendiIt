@@ -70,6 +70,16 @@ p {
   font-size: 72%;
   color: black;
 }
+@media screen and (min-width: 768px) {
+  p {
+    font-size: 1.8vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  p {
+    font-size: 1.15vw;
+  }
+}
 
 .root {
   width: 100%;
@@ -487,17 +497,6 @@ main {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .main__p {
-    font-size: 1.8vw;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .main__p {
-    font-size: 1.15vw;
-  }
-}
-
 .main__button {
   width: 100%;
   margin-top: 1vw;
@@ -568,6 +567,18 @@ main {
     padding-right: 9%;
   }
 }
+@media screen and (min-width: 768px) {
+  .steps {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .steps {
+    justify-content: space-between;
+  }
+}
 
 .steps__figure {
   width: 100%;
@@ -585,8 +596,13 @@ main {
 
 .steps__title {
   font-weight: 600;
-  font-size: 8.7vw;
   font-size: 175%;
+}
+
+@media screen and (min-width: 768px) {
+  .steps__text {
+    font-size: 120%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
