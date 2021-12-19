@@ -38,8 +38,8 @@ html {
 }
 
 body {
-  background: inherit;
   background: blue;
+  background: inherit;
   font-family: "Myriad Pro";
 }
 
@@ -67,6 +67,7 @@ h3 {
 p {
   font-weight: 400;
   font-size: 3.6vw;
+  color: black;
 }
 
 .root {
@@ -485,10 +486,6 @@ main {
   }
 }
 
-.main__p {
-  font-size: 3.6vw;
-  color: black;
-}
 @media screen and (min-width: 768px) {
   .main__p {
     font-size: 1.8vw;
@@ -550,6 +547,35 @@ main {
   .main__textBlock-h2 {
     font-size: 2.5vw;
   }
+}
+
+.steps {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+@media screen and (min-width: 768px) {
+  .steps {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .steps {
+    padding-left: 9%;
+    padding-right: 9%;
+  }
+}
+
+.steps__image {
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.steps__title {
+  font-weight: 600;
+  font-size: 8.7vw;
 }
 
 /*# sourceMappingURL=style.css.map */
