@@ -1,27 +1,57 @@
 .steps
     @include containerHorisontalPadding
     padding-top: 5%
-    padding-bottom: 5%
     @media screen and (min-width: 768px)
         display: flex
         justify-content: space-around
         flex-flow: wrap
     @media screen and (min-width: 1024px)
-        justify-content: space-between    
-
+        justify-content: flex-start   
 .steps__figure
     width: 100%
     @media screen and (min-width: 768px)
         width: 40%
-
+    @media screen and (min-width: 768px)
+        margin-right: 10%    
 .steps__image
     width: 100%
     margin-bottom: 5%
-
 .steps__title
     font-weight: 600
     font-size: 175%
-
+    @media screen and (min-width: 768px)
+        font-size: 3.7vw
 .steps__text
     @media screen and (min-width: 768px)
-        font-size: 120%
+        font-size: 1.9vw
+
+.send-parcel
+    @include containerHorisontalPadding
+    background: $mainElementColor
+    padding-top: 7%
+    padding-bottom: 5%
+    @media screen and (min-width: 768px)
+        padding-top: 5%
+        display: flex
+        justify-content: space-between
+.send-parcel__titel-block
+    @media screen and (min-width: 768px)
+        width: 50%
+    @media screen and (min-width: 1024px)
+        width: 65%    
+.send-parcel__titel
+    @media screen and (min-width: 768px)
+        font-size: 192%
+    @media screen and (min-width: 768px)
+        font-size: 3.6vw
+    @media screen and (min-width: 768px)
+        font-size: 2.6vw          
+.send-parcel__button
+    @media screen and (min-width: 768px)
+        width: 43%
+        margin-top: 1.5% 
+    @media screen and (min-width: 1024px)
+        width: 33%
+        margin-top: -0.4%
+        height: 0%
+        @include desctopButtonText             
