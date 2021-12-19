@@ -668,6 +668,12 @@ main {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .send-parcel__button {
+    margin: 6% 0%;
+    width: 100%;
+  }
+}
 @media screen and (min-width: 768px) {
   .send-parcel__button {
     width: 43%;
