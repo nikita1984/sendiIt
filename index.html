@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Mobile</title>
+    <title>SendIt</title>
     <meta name='viewport' content='width=device-width,initial-scale=1'/>
     <meta content='true' name='HandheldFriendly'/>
     <meta content='width' name='MobileOptimized'/>
@@ -118,7 +117,7 @@
                 </div>
             </div>    
         </main>
-        <div class="steps">
+        <section class="steps">
             <figure class="steps__figure">
                 <img class="steps__image" src="./images/step_1.jpg" alt="step_1.jpg">
                 <figcaption>
@@ -150,11 +149,27 @@
                         и благодарности от адресата :)</p>
                 </figcaption>
             </figure>
-        </div>
-        <div class="send-parcel">
+        </section>
+        <section class="send-parcel">
             <div class="send-parcel__titel-block"><h2 class="send-parcel__titel">Мы берём все заботы по доставке на себя!</h2></div>
             <button type="button" class="btn btn-primary notFrameworkBtn send-parcel__button">отправить посылку</button>
-        </div>
+        </section >
+        <section  class="callBack">
+            <div class="callBack__textBlock">
+                <h1 class="callBack__titel">хотите мы вам перезвоним?</h1>
+                <p class="callBack__text">Закажите звонок, и менеджер вам всё расскажет и объяснит</p>
+            </div>
+            <form action="askPhoneCallback" class="callBack__form">
+                <input class="input-global callBack__input" type="tel" placeholder="Ваш телефон">
+                <button class="btn btn-primary notFrameworkBtn callBack__btn">заказать звонок</button>
+                <div class="callBack__checkbox">
+                    <label class="callBack__checkboxLabel">
+                        <input type="checkbox" class="callBack__checkboxInput">
+                        Я согласен на обработку персональных данных
+                    </label>
+                </div>
+            </form>
+        </section>
         <div>footer</div>
     </div>    
 </body>

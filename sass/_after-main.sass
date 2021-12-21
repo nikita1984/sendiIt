@@ -1,6 +1,6 @@
 .steps
     @include containerHorisontalPadding
-    padding-top: 5%
+    padding-top: $sectionPaddingTop
     @media screen and (min-width: 768px)
         display: flex
         justify-content: space-around
@@ -28,10 +28,10 @@
 .send-parcel
     @include containerHorisontalPadding
     background: $mainElementColor
-    padding-top: 7%
+    padding-top: $sectionPaddingTop + 2%
     padding-bottom: 5%
     @media screen and (min-width: 768px)
-        padding-top: 5%
+        padding-top: $sectionPaddingTop
         display: flex
         justify-content: space-between
 .send-parcel__titel-block
@@ -49,7 +49,6 @@
 .send-parcel__button
     @media screen and (max-width: 767px)
         margin: 6% 0%
-        width: 100%
     @media screen and (min-width: 768px)
         width: 43%
         margin-top: 1.5% 
@@ -57,4 +56,41 @@
         width: 33%
         margin-top: -0.4%
         height: 0%
-        @include desctopButtonText             
+        @include desctopButtonText
+
+.callBack
+    @include containerHorisontalPadding
+    padding-top: $sectionPaddingTop
+    background: $mainColor
+.callBack__titel
+    margin-top: 5%
+    color: $textAlternativeColor    
+.callBack__text
+    margin-top: 5%
+    color: $textAlternativeColor
+    font-weight: 600
+    font-size: 4.6vw 
+.callBack__input
+    color: $textAlternativeColor
+    border-color: $textAlternativeColor
+    &::placeholder 
+        color: white
+.callBack__btn
+    margin-top: 5%    
+    background: #FFCC00
+    color: $textColor
+    
+.callBack__checkboxLabel
+    width: 80%
+    color: white
+    background-color: $mainColor
+    margin-left: 2%     
+    font-size: 3.17vw
+    margin-bottom: 3%
+.callBack__checkboxInput
+    margin-top: 3%  
+    margin-right: 3%
+      
+
+
+                   
