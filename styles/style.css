@@ -107,6 +107,14 @@ p {
 .notFrameworkBtn:hover, .input-global:hover {
   background-color: #008DCD;
 }
+@media screen and (min-width: 1024px) {
+  .notFrameworkBtn, .input-global {
+    height: 3.5vw;
+    font-size: 1vw;
+    word-spacing: 0.5vw;
+    letter-spacing: 0.2vw;
+  }
+}
 
 .input-global {
   text-transform: inherit;
@@ -228,10 +236,6 @@ ul {
   .header__button {
     width: 47%;
     margin-top: 4%;
-    height: 3.5vw;
-    font-size: 1vw;
-    word-spacing: 0.5vw;
-    letter-spacing: 0.2vw;
   }
 }
 
@@ -523,10 +527,6 @@ main {
 @media screen and (min-width: 1024px) {
   .main__button {
     width: 82%;
-    height: 3.5vw;
-    font-size: 1vw;
-    word-spacing: 0.5vw;
-    letter-spacing: 0.2vw;
   }
 }
 
@@ -694,12 +694,8 @@ main {
 @media screen and (min-width: 1024px) {
   .send-parcel__button {
     width: 33%;
-    margin-top: -0.4%;
+    margin-top: 0.1vw;
     height: 0%;
-    height: 3.5vw;
-    font-size: 1vw;
-    word-spacing: 0.5vw;
-    letter-spacing: 0.2vw;
   }
 }
 
@@ -727,6 +723,11 @@ main {
     justify-content: space-between;
   }
 }
+@media screen and (min-width: 768px) {
+  .callBack {
+    padding-bottom: 2%;
+  }
+}
 
 .callBack__textBlock {
   margin-top: 5%;
@@ -737,19 +738,23 @@ main {
     margin-top: inherit;
   }
 }
+@media screen and (min-width: 1024px) {
+  .callBack__textBlock {
+    width: 65%;
+  }
+}
 
 .callBack__titel {
   color: white;
 }
 @media screen and (min-width: 768px) {
   .callBack__titel {
-    font-size: 192%;
+    font-size: 3.6vw;
   }
 }
-
-@media screen and (min-width: 768px) {
-  .callBack__form {
-    width: 43%;
+@media screen and (min-width: 1024px) {
+  .callBack__titel {
+    font-size: 3.47vw;
   }
 }
 
@@ -765,6 +770,23 @@ main {
     margin-top: inherit;
   }
 }
+@media screen and (min-width: 1024px) {
+  .callBack__text {
+    font-size: 1.73vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .callBack__form {
+    width: 43%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .callBack__form {
+    width: 33%;
+    margin-top: 0.3vw;
+  }
+}
 
 .callBack__input {
   color: white;
@@ -776,6 +798,7 @@ main {
 @media screen and (min-width: 768px) {
   .callBack__input {
     width: 100%;
+    height: 32%;
   }
 }
 
@@ -787,6 +810,7 @@ main {
 @media screen and (min-width: 768px) {
   .callBack__btn {
     width: 100%;
+    height: 32%;
   }
 }
 
@@ -801,12 +825,25 @@ main {
 @media screen and (min-width: 768px) {
   .callBack__checkboxLabel {
     font-size: 1.39vw;
+    margin-left: inherit;
+  }
+}
+@media screen and (min-width: 768px) {
+  .callBack__checkboxLabel {
+    font-size: 0.9vw;
+    vertical-align: baseline;
   }
 }
 
 .callBack__checkboxInput {
   margin-top: 3%;
   margin-right: 3%;
+  vertical-align: sub;
+}
+@media screen and (min-width: 376px) and (max-width: 767px) {
+  .callBack__checkboxInput {
+    vertical-align: baseline;
+  }
 }
 
 .mt_3percent {
