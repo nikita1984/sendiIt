@@ -25,6 +25,7 @@
     @media screen and (min-width: 768px)
         font-size: 1.9vw
 
+
 .send-parcel
     @include containerHorisontalPadding
     background: $mainElementColor
@@ -44,7 +45,7 @@
         font-size: 192%
     @media screen and (min-width: 768px)
         font-size: 3.6vw
-    @media screen and (min-width: 768px)
+    @media screen and (min-width: 1024px)
         font-size: 2.6vw          
 .send-parcel__button
     @media screen and (max-width: 767px)
@@ -58,28 +59,47 @@
         height: 0%
         @include desctopButtonText
 
+
 .callBack
     @include containerHorisontalPadding
     padding-top: $sectionPaddingTop
     background: $mainColor
-.callBack__titel
+    @media screen and (min-width: 768px)
+        display: flex
+        justify-content: space-between
+.callBack__textBlock
     margin-top: 5%
-    color: $textAlternativeColor    
+    @media screen and (min-width: 768px)
+        width: 40%
+        margin-top: inherit        
+.callBack__titel
+    color: $textAlternativeColor
+    @media screen and (min-width: 768px)
+        font-size: 192% 
+.callBack__form
+    @media screen and (min-width: 768px)
+        width: 43%                
 .callBack__text
     margin-top: 5%
     color: $textAlternativeColor
     font-weight: 600
-    font-size: 4.6vw 
+    font-size: 4.6vw
+    @media screen and (min-width: 768px)
+        font-size: 2vw
+        margin-top: inherit  
 .callBack__input
     color: $textAlternativeColor
     border-color: $textAlternativeColor
     &::placeholder 
         color: white
+    @media screen and (min-width: 768px)
+        width: 100%    
 .callBack__btn
     margin-top: 5%    
     background: #FFCC00
     color: $textColor
-    
+    @media screen and (min-width: 768px)
+        width: 100%
 .callBack__checkboxLabel
     width: 80%
     color: white
@@ -87,9 +107,12 @@
     margin-left: 2%     
     font-size: 3.17vw
     margin-bottom: 3%
+    @media screen and (min-width: 768px)
+        font-size: 1.39vw
 .callBack__checkboxInput
     margin-top: 3%  
     margin-right: 3%
+    
       
 
 
