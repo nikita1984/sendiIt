@@ -39,7 +39,8 @@
     @media screen and (min-width: 768px)
         width: 50%
     @media screen and (min-width: 1024px)
-        width: 65%    
+        width: 65% 
+        padding-top: 0.5vw   
 .send-parcel__titel
     @media screen and (min-width: 768px)
         font-size: 192%
@@ -55,8 +56,7 @@
         margin-top: 1.5% 
     @media screen and (min-width: 1024px)
         width: 33%
-        margin-top: 0.1vw
-        height: 0%
+        margin-top: inherit
 
 .callBack
     @include containerHorisontalPadding
@@ -73,13 +73,21 @@
         width: 40%
         margin-top: inherit
     @media screen and (min-width: 1024px)
-        width: 65%               
+        width: 65%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        padding-top: 0.5%
+        padding-bottom: 2%
+    @media screen and (min-width: 1440px)
+        padding-top: 0.5vw
+        padding-bottom: 2vw
 .callBack__titel
     color: $textAlternativeColor
     @media screen and (min-width: 768px)
         font-size: 3.6vw
     @media screen and (min-width: 1024px)
-        font-size: 3.47vw
+        font-size: 3.4vw
 .callBack__text
     margin-top: 5%
     color: $textAlternativeColor
@@ -103,14 +111,12 @@
         color: white
     @media screen and (min-width: 768px)
         width: 100%
-        height: 32%
 .callBack__btn
     margin-top: 5%    
     background: #FFCC00
     color: $textColor
     @media screen and (min-width: 768px)
         width: 100%
-        height: 32%
 .callBack__checkboxLabel
     width: 80%
     color: white

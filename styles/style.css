@@ -87,7 +87,7 @@ p {
 
 .notFrameworkBtn, .input-global {
   background-color: #008DCD;
-  border-radius: 30px;
+  border-radius: 30vw;
   display: inline-block;
   cursor: pointer;
   text-transform: uppercase;
@@ -661,6 +661,7 @@ main {
 @media screen and (min-width: 1024px) {
   .send-parcel__titel-block {
     width: 65%;
+    padding-top: 0.5vw;
   }
 }
 
@@ -694,8 +695,7 @@ main {
 @media screen and (min-width: 1024px) {
   .send-parcel__button {
     width: 33%;
-    margin-top: 0.1vw;
-    height: 0%;
+    margin-top: inherit;
   }
 }
 
@@ -741,6 +741,17 @@ main {
 @media screen and (min-width: 1024px) {
   .callBack__textBlock {
     width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 0.5%;
+    padding-bottom: 2%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .callBack__textBlock {
+    padding-top: 0.5vw;
+    padding-bottom: 2vw;
   }
 }
 
@@ -754,7 +765,7 @@ main {
 }
 @media screen and (min-width: 1024px) {
   .callBack__titel {
-    font-size: 3.47vw;
+    font-size: 3.4vw;
   }
 }
 
@@ -798,7 +809,6 @@ main {
 @media screen and (min-width: 768px) {
   .callBack__input {
     width: 100%;
-    height: 32%;
   }
 }
 
@@ -810,7 +820,6 @@ main {
 @media screen and (min-width: 768px) {
   .callBack__btn {
     width: 100%;
-    height: 32%;
   }
 }
 
