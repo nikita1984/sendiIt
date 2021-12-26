@@ -173,13 +173,54 @@
         <section class="reviews">
             <h1 class="reviews__titel">отзывы</h2>
             <div class="reviews__slider">
-                <div class="slider__controlers"></div>
-                <div class="slider__inner">
-                    <div class="slide">Слайд 1</div>
-                    <div class="slide">Слайд 2</div>
-                    <div class="slide">Слайд 3</div>
+                <div class="reviews__controlersContiner">
+                    <button class="slider__controlers slider__controlers_left"></button>
                 </div>
-                <div class="slider__controlers"></div>
+                <!-- TODO: Make Slider as carousel -->
+                <div class="slider__inner">
+                    <div class="slider__slide-container_One">
+                        <div class="slide__up">
+                            <div class="slide__authorImg slide__authorImg_userOne"></div>
+                            <article class="slide__info-block">
+                                <h2 class="slide__author-name">Дарья</h2>
+                                <h3 class="slide__author-company">La Intuicion</h3>
+                                <p class="slide__sendInfo">
+                                    Посылка: товары <br>
+                                    Откуда: Москва <br>
+                                    Куда: Нижневартовск <br>
+                                </p>
+                            </article>
+                        </div>
+                        <article class="slide__review">Отличный и качественный сервис.
+                            Долго искали курьерскую службу для доставки наших товаров. Решили попробовать и были приятно 
+                            удивлены, что помимо удобного сайта, компания предоставляет доступ в личный кабинет, где 
+                            реализованы многие наши потребности (ведение адресной базы, выбор и вызов курьера в пару кликов).
+                        </article>
+                    </div>
+                    <div class="slider__slide-container_Two">
+                        <div class="slide__up">
+                            <div class="slide__authorImg slide__authorImg_userTwo"></div>
+                            <article class="slide__info-block">
+                                <h2 class="slide__author-name">Елена</h2>
+                                <h3 class="slide__author-company">Global Logic</h3>
+                                <p class="slide__sendInfo">
+                                    Посылка: товары <br>
+                                    Откуда: Москва <br>
+                                    Куда: Калининград <br>
+                                </p>
+                            </article>
+                        </div>
+                        <article class="slide__review">Мне нравится работать с SendIt, потому что это 
+                            удобно: моментальный расчет стоимости доставки, удобный сайт, выборка среди 
+                            основных надёжных логистических компаний и самый значимый фактор – всё это 
+                            можно оперативно организовать и не волноваться. И ещё хочу сказать отдельное 
+                            спасибо менеджеру за отзывчивость.
+                        </article>
+                    </div>
+                </div>
+                <div class="reviews__controlersContiner">
+                    <button class="slider__controlers slider__controlers_right"></button>
+                </div>
             </div>
         </section>
         <footer>footer</footer>

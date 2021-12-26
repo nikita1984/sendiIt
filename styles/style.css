@@ -863,6 +863,7 @@ main {
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 5%;
+  padding-bottom: 5%;
 }
 @media screen and (min-width: 768px) {
   .reviews {
@@ -879,6 +880,83 @@ main {
 
 .reviews__titel {
   font-size: 8.7vw;
+}
+
+.reviews__slider {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews__controlersContiner {
+  display: flex;
+  align-items: center;
+}
+
+.slider__controlers {
+  width: 12px;
+  height: 12px;
+  border-left: 2px solid #C4C4C4;
+  border-bottom: 2px solid #C4C4C4;
+  border-right: white;
+  border-top: white;
+  background-color: white;
+  text-align: center;
+}
+.slider__controlers_left {
+  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+}
+.slider__controlers_right {
+  transform: matrix(-0.71, -0.71, 0.71, -0.71, 0, 0);
+}
+
+.slider__inner {
+  width: 75vw;
+}
+
+.slide__up {
+  display: flex;
+  height: 40vw;
+}
+
+.slide__authorImg {
+  width: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.slide__authorImg_userOne {
+  background-image: url("../images/author_1.jpg");
+}
+.slide__authorImg_userTwo {
+  background-image: url("../images/author_2.jpg");
+}
+
+.slide__info-block {
+  width: 53%;
+  padding-left: 7%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.slide__author-name {
+  font-weight: 500;
+  font-size: 7.7vw;
+}
+
+.slide__author-company {
+  font-weight: 400;
+}
+
+.slide__review {
+  font-size: 3.8vw;
+}
+
+.slider__slide-container_One {
+  display: block;
+}
+
+.slider__slide-container_Two {
+  display: none;
 }
 
 .mt_3percent {
