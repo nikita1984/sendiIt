@@ -877,6 +877,10 @@ main {
   }
 }
 
+.reviews__titel {
+  font-size: 8.7vw;
+}
+
 .mt_3percent {
   margin-top: 3%;
 }
