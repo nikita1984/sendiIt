@@ -886,10 +886,22 @@ main {
     font-size: 5vw;
   }
 }
+@media screen and (min-width: 1024px) {
+  .reviews__titel {
+    font-size: 2.4vw;
+  }
+}
 
 .reviews__slider {
   display: flex;
   justify-content: space-between;
+}
+@media screen and (min-width: 1024px) {
+  .reviews__slider {
+    display: grid;
+    gap: 4vw;
+    grid-template-columns: 3vw auto 3vw;
+  }
 }
 
 .reviews__controlersContiner {
@@ -924,6 +936,12 @@ main {
     display: grid;
     gap: 8vw;
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 768px) {
+  .slider__inner {
+    width: inherit;
+    gap: 6vw;
   }
 }
 
@@ -979,6 +997,11 @@ main {
 @media screen and (min-width: 768px) {
   .slide__review {
     font-size: 88%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .slide__review {
+    font-size: 81%;
   }
 }
 
