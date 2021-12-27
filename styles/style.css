@@ -841,7 +841,7 @@ main {
     margin-left: inherit;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .callBack__checkboxLabel {
     font-size: 0.9vw;
     vertical-align: baseline;
@@ -881,6 +881,11 @@ main {
 .reviews__titel {
   font-size: 8.7vw;
 }
+@media screen and (min-width: 768px) {
+  .reviews__titel {
+    font-size: 5vw;
+  }
+}
 
 .reviews__slider {
   display: flex;
@@ -912,10 +917,24 @@ main {
 .slider__inner {
   width: 75vw;
 }
+@media screen and (min-width: 768px) {
+  .slider__inner {
+    width: 83vw;
+    padding-top: 3vw;
+    display: grid;
+    gap: 8vw;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 .slide__up {
   display: flex;
   height: 40vw;
+}
+@media screen and (min-width: 768px) {
+  .slide__up {
+    height: 20vw;
+  }
 }
 
 .slide__authorImg {
@@ -940,15 +959,27 @@ main {
 
 .slide__author-name {
   font-weight: 500;
-  font-size: 7.7vw;
+  font-size: 154%;
 }
 
 .slide__author-company {
   font-weight: 400;
+  font-size: 112%;
+}
+
+@media screen and (min-width: 768px) {
+  .slide__sendInfo {
+    font-size: 62%;
+  }
 }
 
 .slide__review {
-  font-size: 3.8vw;
+  font-size: 76%;
+}
+@media screen and (min-width: 768px) {
+  .slide__review {
+    font-size: 88%;
+  }
 }
 
 .slider__slide-container_One {
@@ -957,6 +988,11 @@ main {
 
 .slider__slide-container_Two {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .slider__slide-container_Two {
+    display: block;
+  }
 }
 
 .mt_3percent {
