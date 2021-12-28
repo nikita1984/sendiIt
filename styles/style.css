@@ -847,6 +847,11 @@ main {
     vertical-align: baseline;
   }
 }
+@media screen and (min-width: 2560px) {
+  .callBack__checkboxLabel {
+    margin-top: 0.2vw;
+  }
+}
 
 .callBack__checkboxInput {
   margin-top: 3%;
@@ -911,13 +916,21 @@ main {
 
 .slider__controlers {
   width: 12px;
+  width: 4vw;
   height: 12px;
+  height: 4vw;
   border-left: 2px solid #C4C4C4;
   border-bottom: 2px solid #C4C4C4;
   border-right: white;
   border-top: white;
   background-color: white;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .slider__controlers {
+    width: 2vw;
+    height: 2vw;
+  }
 }
 .slider__controlers_left {
   transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
@@ -933,25 +946,33 @@ main {
   .slider__inner {
     width: 83vw;
     padding-top: 3vw;
+    padding-left: 2vw;
     display: grid;
-    gap: 8vw;
-    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    grid-template-columns: 36vw 36vw;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .slider__inner {
     width: inherit;
-    gap: 6vw;
+    padding-left: inherit;
+    gap: 3vw;
   }
 }
 
 .slide__up {
   display: flex;
-  height: 40vw;
+  min-height: 40vw;
 }
 @media screen and (min-width: 768px) {
   .slide__up {
-    height: 20vw;
+    min-height: inherit;
+    height: 19.5vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .slide__up {
+    height: 13.5vw;
   }
 }
 
@@ -959,6 +980,12 @@ main {
   width: 50%;
   background-size: contain;
   background-repeat: no-repeat;
+}
+@media screen and (min-width: 1024px) {
+  .slide__authorImg {
+    width: 34%;
+    margin-right: 4%;
+  }
 }
 .slide__authorImg_userOne {
   background-image: url("../images/author_1.jpg");
@@ -977,31 +1004,52 @@ main {
 
 .slide__author-name {
   font-weight: 500;
-  font-size: 154%;
+}
+@media screen and (min-width: 768px) {
+  .slide__author-name {
+    font-size: 3.2vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .slide__author-name {
+    font-size: 2.7vw;
+  }
 }
 
 .slide__author-company {
   font-weight: 400;
-  font-size: 112%;
 }
-
 @media screen and (min-width: 768px) {
-  .slide__sendInfo {
-    font-size: 62%;
+  .slide__author-company {
+    font-size: 2.3vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .slide__author-company {
+    font-size: 1.6vw;
   }
 }
 
+.slide__sendInfo {
+  font-size: 62%;
+  font-size: 3.1vw;
+}
+@media screen and (min-width: 768px) {
+  .slide__sendInfo {
+    font-size: 1.3vw;
+  }
+}
 .slide__review {
-  font-size: 76%;
+  font-size: 3.8vw;
 }
 @media screen and (min-width: 768px) {
   .slide__review {
-    font-size: 88%;
+    font-size: 1.83vw;
   }
 }
 @media screen and (min-width: 1024px) {
   .slide__review {
-    font-size: 81%;
+    font-size: 1.25vw;
   }
 }
 

@@ -130,6 +130,8 @@
     @media screen and (min-width: 1024px)
         font-size: 0.9vw
         vertical-align: baseline
+    @media screen and (min-width: 2560px)
+        margin-top: 0.2vw    
 .callBack__checkboxInput
     margin-top: 3%  
     margin-right: 3%
@@ -159,14 +161,22 @@
     align-items: center        
 .slider__controlers
     $controler-border: 2px solid #C4C4C4
+    $controlersLineLength: 4vw
     width: 12px
+    width: $controlersLineLength
     height: 12px
+    height: $controlersLineLength
     border-left: $controler-border
     border-bottom: $controler-border
     border-right: $mainColorThree
     border-top: $mainColorThree
     background-color: $mainColorThree
     text-align: center
+    @media screen and (min-width: 768px)
+        $controlersLineLength: 2vw
+        width: $controlersLineLength
+        height: $controlersLineLength
+    // @media screen and (min-width: 1024px)
     &_left
         transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0)
     &_right
@@ -176,21 +186,29 @@
     @media screen and (min-width: 768px)
         width: 83vw
         padding-top: 3vw
+        padding-left: 2vw
         display: grid
-        gap: 8vw
-        grid-template-columns: repeat(2, 1fr)
-    @media screen and (min-width: 768px)
+        justify-content: space-around
+        grid-template-columns: 36vw 36vw
+    @media screen and (min-width: 1024px)
         width: inherit
-        gap: 6vw    
+        padding-left: inherit
+        gap: 3vw
 .slide__up
     display: flex
-    height: 40vw
+    min-height: 40vw
     @media screen and (min-width: 768px)
-        height: 20vw
+        min-height: inherit
+        height: 19.5vw
+    @media screen and (min-width: 1024px)
+        height: 13.5vw      
 .slide__authorImg
     width: 50%
     background-size: contain
     background-repeat: no-repeat
+    @media screen and (min-width: 1024px)
+        width: 34%
+        margin-right: 4%
     &_userOne
         background-image: url("../images/author_1.jpg")
     &_userTwo
@@ -203,19 +221,35 @@
     justify-content: space-between
 .slide__author-name
     font-weight: 500
-    font-size: 154%
+    // font-size: 154%
+    // font-size: 3.2vw
+    @media screen and (min-width: 768px)
+        font-size: 3.2vw
+    @media screen and (min-width: 1024px)
+        font-size: 2.7vw    
 .slide__author-company
     font-weight: 400
-    font-size: 112%
-.slide__sendInfo   
+    // font-size: 112%
+    // font-size: 2.3vw
     @media screen and (min-width: 768px)
-        font-size: 62%
-.slide__review
-    font-size: 76%
-    @media screen and (min-width: 768px)
-        font-size: 88%
+        font-size: 2.3vw
     @media screen and (min-width: 1024px)
-        font-size: 81%    
+        font-size: 1.6vw     
+.slide__sendInfo
+    font-size: 62%
+    font-size: 3.1vw   
+    @media screen and (min-width: 768px)
+        font-size: 1.3vw
+    @media screen and (min-width: 1024px)
+        // font-size: 1.4vw       
+.slide__review
+    // font-size: 76%
+    font-size: 3.8vw
+    @media screen and (min-width: 768px)
+        // font-size: 88%
+        font-size: 1.83vw
+    @media screen and (min-width: 1024px)
+        font-size: 1.25vw     
 .slider__slide-container_One
     display: block    
 .slider__slide-container_Two
