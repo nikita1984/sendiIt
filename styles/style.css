@@ -888,7 +888,8 @@ main {
 }
 @media screen and (min-width: 768px) {
   .reviews__titel {
-    font-size: 5vw;
+    font-size: 5.4vw;
+    font-weight: 700;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -915,9 +916,7 @@ main {
 }
 
 .slider__controlers {
-  width: 12px;
   width: 4vw;
-  height: 12px;
   height: 4vw;
   border-left: 2px solid #C4C4C4;
   border-bottom: 2px solid #C4C4C4;
@@ -1031,7 +1030,6 @@ main {
 }
 
 .slide__sendInfo {
-  font-size: 62%;
   font-size: 3.1vw;
 }
 @media screen and (min-width: 768px) {
@@ -1089,6 +1087,14 @@ main {
 .advantages__titel {
   margin-top: 2vw;
 }
+@media screen and (min-width: 768px) {
+  .advantages__titel {
+    font-size: 4.8vw;
+    font-weight: 700;
+    margin-top: 0vw;
+    margin-bottom: 3vw;
+  }
+}
 
 .advantages__figure-container {
   display: flex;
@@ -1099,6 +1105,11 @@ main {
 .advantages__figures {
   width: 25vw;
 }
+@media screen and (min-width: 768px) {
+  .advantages__figures {
+    width: 12.5vw;
+  }
+}
 
 .advantages__icon-block {
   background: white;
@@ -1108,6 +1119,11 @@ main {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .advantages__icon-block {
+    height: 12.5vw;
+  }
 }
 
 .advantages__icons {
@@ -1129,6 +1145,12 @@ main {
   text-align: center;
   font-size: 3.1vw;
   padding-top: 3vw;
+}
+@media screen and (min-width: 768px) {
+  .advantages__figcaptions {
+    font-size: 1.5vw;
+    padding-top: 2vw;
+  }
 }
 
 .mt_3percent {
