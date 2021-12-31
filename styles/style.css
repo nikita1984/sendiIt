@@ -1086,6 +1086,10 @@ main {
   }
 }
 
+.advantages__titel {
+  margin-top: 2vw;
+}
+
 .advantages__figure-container {
   display: flex;
   justify-content: space-between;
@@ -1113,10 +1117,17 @@ main {
 .advantages__icons_freeTruck {
   width: 70%;
 }
+.advantages__icons_checklist {
+  height: 60%;
+}
+.advantages__icons_searchBarcode {
+  width: 60%;
+  margin-top: 15%;
+}
 
 .advantages__figcaptions {
   text-align: center;
-  font-size: 3vw;
+  font-size: 3.1vw;
   padding-top: 3vw;
 }
 
