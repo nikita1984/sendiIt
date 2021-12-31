@@ -894,7 +894,7 @@ main {
 }
 @media screen and (min-width: 1024px) {
   .reviews__titel {
-    font-size: 2.4vw;
+    font-size: 2.5vw;
   }
 }
 
@@ -1095,6 +1095,11 @@ main {
     margin-bottom: 3vw;
   }
 }
+@media screen and (min-width: 1024px) {
+  .advantages__titel {
+    font-size: 2.5vw;
+  }
+}
 
 .advantages__figure-container {
   display: flex;
@@ -1110,6 +1115,11 @@ main {
     width: 12.5vw;
   }
 }
+@media screen and (min-width: 1024px) {
+  .advantages__figures {
+    width: 11vw;
+  }
+}
 
 .advantages__icon-block {
   background: white;
@@ -1123,6 +1133,11 @@ main {
 @media screen and (min-width: 768px) {
   .advantages__icon-block {
     height: 12.5vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .advantages__icon-block {
+    height: 11vw;
   }
 }
 
@@ -1150,6 +1165,11 @@ main {
   .advantages__figcaptions {
     font-size: 1.5vw;
     padding-top: 2vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .advantages__figcaptions {
+    font-size: 1.2vw;
   }
 }
 
