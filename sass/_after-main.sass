@@ -151,7 +151,7 @@
         top: $sectionPaddingTop
         bottom: $sectionPaddingBottom
 .reviews__titel
-    font-size: 8.7vw
+    font-size: $mobileSectionTitelFontSize
     @media screen and (min-width: 768px)
         font:
             size: 5.4vw
@@ -165,7 +165,7 @@
         display: grid
         gap: 4vw 
         grid-template-columns: 3vw auto 3vw
-.reviews__controlersContiner
+.reviews__controlersContainer
     display: flex
     align-items: center        
 .slider__controlers
@@ -265,6 +265,7 @@
         bottom: $sectionPaddingBottom
     background: $mainElementColor
 .advantages__titel
+    font-size: $mobileSectionTitelFontSize
     margin-top: 2vw
     @media screen and (min-width: 768px)
         font:
@@ -315,4 +316,53 @@
         font-size: 1.5vw          
         padding-top: 2vw 
     @media screen and (min-width: 1024px)
-        font-size: 1.2vw                 
+        font-size: 1.2vw
+
+.guarantees                         
+    @include containerHorisontalPadding
+    padding: 
+        top: $sectionPaddingTop
+        bottom: $sectionPaddingBottom
+.guarantees__titel
+    font-size: $mobileSectionTitelFontSize        
+.guarantees__slider
+    display: flex
+    justify-content: space-between
+.guarantees__slider-controlersContainer
+    // margin-top: 7vw
+    margin-top: 7.7%       
+.guarantees__slider-ihner
+    padding: 0 3vw    
+.guarantees__sliders-header
+    display: flex
+    // justify-content: flex-start
+    align-items: center
+.guarantees__sliders-iconBlock
+    background-color: $mainElementColor
+    background-color: wheat 
+    border-radius: 50%
+    min-width: 21vw
+    height: 21vw
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+    @media screen and (min-width: 768px)
+        width: 12.5vw
+        height: 12.5vw
+    @media screen and (min-width: 1024px)
+        width: 11vw
+        height: 11vw
+.guarantees__sliders-icons
+    width: 50%
+    height: 50%
+.guarantees__sliders-titel
+    margin:
+        top: 5%
+        left: 3vw
+    font-size: 5.3vw
+.guarantees__sliders-description
+    color: $textColor
+    font-size: 4vw 
+    margin: 3vw 0
+.guarantees__sliders-button             
+    margin: 2vw 0
