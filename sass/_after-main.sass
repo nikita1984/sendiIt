@@ -324,19 +324,35 @@
         top: $sectionPaddingTop
         bottom: $sectionPaddingBottom
 .guarantees__titel
-    font-size: $mobileSectionTitelFontSize        
+    font-size: $mobileSectionTitelFontSize
+    @media screen and (min-width: 768px)
+        font-size: 4.6vw       
 .guarantees__slider
     display: flex
     justify-content: space-between
 .guarantees__slider-controlersContainer
     // margin-top: 7vw
-    margin-top: 7.7%       
+    margin-top: 7.7% 
+    @media screen and (min-width: 768px)
+        display: none      
 .guarantees__slider-ihner
-    padding: 0 3vw    
+    padding: 0 3vw
+    @media screen and (min-width: 768px)
+        padding: 0
+        display: flex
+        justify-content: space-between        
 .guarantees__sliders-header
     display: flex
     // justify-content: flex-start
     align-items: center
+    @media screen and (min-width: 768px)
+        flex-direction: column
+        align-items: start
+.guarantees__sliders-container
+    @media screen and (min-width: 768px)
+        width: 31%
+    &_Two, &_Three
+        @extend .slider__slide-container_Two        
 .guarantees__sliders-iconBlock
     background-color: $mainElementColor
     background-color: wheat 
@@ -360,9 +376,23 @@
         top: 5%
         left: 3vw
     font-size: 5.3vw
+    @media screen and (min-width: 768px)
+        margin-left: 0
+        font-size: 2.5vw
+.guarantees__sliders-body
+    @media screen and (min-width: 768px)
+        height: 24.7vw
+        display: flex
+        flex-direction: column
+        justify-content: space-between        
 .guarantees__sliders-description
     color: $textColor
     font-size: 4vw 
     margin: 3vw 0
+    @media screen and (min-width: 768px)
+        margin: 0
+        font-size: 1.6vw 
 .guarantees__sliders-button             
     margin: 2vw 0
+    @media screen and (min-width: 768px)
+        width: 100%

@@ -1055,11 +1055,11 @@ main {
   display: block;
 }
 
-.slider__slide-container_Two {
+.slider__slide-container_Two, .guarantees__sliders-container_Two, .guarantees__sliders-container_Three {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .slider__slide-container_Two {
+  .slider__slide-container_Two, .guarantees__sliders-container_Two, .guarantees__sliders-container_Three {
     display: block;
   }
 }
@@ -1196,6 +1196,11 @@ main {
 .guarantees__titel {
   font-size: 8.9vw;
 }
+@media screen and (min-width: 768px) {
+  .guarantees__titel {
+    font-size: 4.6vw;
+  }
+}
 
 .guarantees__slider {
   display: flex;
@@ -1205,16 +1210,39 @@ main {
 .guarantees__slider-controlersContainer {
   margin-top: 7.7%;
 }
+@media screen and (min-width: 768px) {
+  .guarantees__slider-controlersContainer {
+    display: none;
+  }
+}
 
 .guarantees__slider-ihner {
   padding: 0 3vw;
+}
+@media screen and (min-width: 768px) {
+  .guarantees__slider-ihner {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .guarantees__sliders-header {
   display: flex;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .guarantees__sliders-header {
+    flex-direction: column;
+    align-items: start;
+  }
+}
 
+@media screen and (min-width: 768px) {
+  .guarantees__sliders-container {
+    width: 31%;
+  }
+}
 .guarantees__sliders-iconBlock {
   background-color: #F7F7F7;
   background-color: wheat;
@@ -1248,15 +1276,41 @@ main {
   margin-left: 3vw;
   font-size: 5.3vw;
 }
+@media screen and (min-width: 768px) {
+  .guarantees__sliders-titel {
+    margin-left: 0;
+    font-size: 2.5vw;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .guarantees__sliders-body {
+    height: 24.7vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
 
 .guarantees__sliders-description {
   color: black;
   font-size: 4vw;
   margin: 3vw 0;
 }
+@media screen and (min-width: 768px) {
+  .guarantees__sliders-description {
+    margin: 0;
+    font-size: 1.6vw;
+  }
+}
 
 .guarantees__sliders-button {
   margin: 2vw 0;
+}
+@media screen and (min-width: 768px) {
+  .guarantees__sliders-button {
+    width: 100%;
+  }
 }
 
 .mt_3percent {
