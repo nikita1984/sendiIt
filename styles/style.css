@@ -1255,6 +1255,7 @@ main {
 }
 @media screen and (min-width: 768px) {
   .guarantees__sliders-iconBlock {
+    min-width: inherit;
     width: 12.5vw;
     height: 12.5vw;
   }
@@ -1285,7 +1286,7 @@ main {
 
 @media screen and (min-width: 768px) {
   .guarantees__sliders-body {
-    height: 24.7vw;
+    height: 23.5vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1310,6 +1311,7 @@ main {
 @media screen and (min-width: 768px) {
   .guarantees__sliders-button {
     width: 100%;
+    margin: inherit;
   }
 }
 
