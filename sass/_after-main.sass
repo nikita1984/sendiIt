@@ -151,13 +151,9 @@
         top: $sectionPaddingTop
         bottom: $sectionPaddingBottom
 .reviews__titel
-    font-size: $mobileSectionTitelFontSize
-    @media screen and (min-width: 768px)
-        font:
-            size: 5.4vw
-            weight: 700
-    @media screen and (min-width: 1024px)
-        font-size: 2.5vw    
+    @extend %section__titel_font
+    @media screen and (min-width: 768px) and (max-width: 1023px)
+        font-size: 5.4vw
 .reviews__slider
     display: flex
     justify-content: space-between
@@ -193,7 +189,6 @@
     @media screen and (min-width: 768px)
         width: 83vw
         padding:
-            top: 3vw
             left: 2vw
         display: grid
         justify-content: space-around
@@ -254,9 +249,7 @@
 .slider__slide-container_One
     display: block    
 .slider__slide-container_Two
-    display: none
-    @media screen and (min-width: 768px)
-        display: block 
+    @extend %slide__displayBesidesMobile
 
 .advantages
     @include containerHorisontalPadding
@@ -265,17 +258,11 @@
         bottom: $sectionPaddingBottom
     background: $mainElementColor
 .advantages__titel
-    font-size: $mobileSectionTitelFontSize
+    @extend %section__titel_font
     margin-top: 2vw
     @media screen and (min-width: 768px)
-        font:
-            size: 4.8vw
-            weight: 700
         margin:    
             top: 0vw
-            bottom: 3vw
-    @media screen and (min-width: 1024px)
-        font-size: 2.5vw
 .advantages__figure-container
     display: flex
     justify-content: space-between
@@ -324,14 +311,11 @@
         top: $sectionPaddingTop
         bottom: $sectionPaddingBottom
 .guarantees__titel
-    font-size: $mobileSectionTitelFontSize
-    @media screen and (min-width: 768px)
-        font-size: 4.6vw       
+    @extend %section__titel_font
 .guarantees__slider
     display: flex
     justify-content: space-between
 .guarantees__slider-controlersContainer
-    // margin-top: 7vw
     margin-top: 7.7% 
     @media screen and (min-width: 768px)
         display: none      
@@ -343,7 +327,6 @@
         justify-content: space-between        
 .guarantees__sliders-header
     display: flex
-    // justify-content: flex-start
     align-items: center
     @media screen and (min-width: 768px)
         flex-direction: column
@@ -352,7 +335,7 @@
     @media screen and (min-width: 768px)
         width: 31%
     &_Two, &_Three
-        @extend .slider__slide-container_Two        
+        @extend %slide__displayBesidesMobile       
 .guarantees__sliders-iconBlock
     background-color: $mainElementColor
     background-color: wheat 
@@ -378,21 +361,29 @@
         left: 3vw
     font-size: 5.3vw
     @media screen and (min-width: 768px)
-        margin-left: 0
+        margin:
+            top: 2vw
+            left: inherit
         font-size: 2.5vw
+    @media screen and (min-width: 1024px)
+        font-size: 2.1vw     
 .guarantees__sliders-body
     @media screen and (min-width: 768px)
         height: 23.5vw
         display: flex
         flex-direction: column
-        justify-content: space-between        
+        justify-content: space-between
+    @media screen and (min-width: 1024px)
+        height: 13vw            
 .guarantees__sliders-description
     color: $textColor
     font-size: 4vw 
     margin: 3vw 0
     @media screen and (min-width: 768px)
-        margin: 0
-        font-size: 1.6vw 
+        margin: inherit
+        font-size: 1.6vw
+    @media screen and (min-width: 1024px)
+        font-size: 1.1vw      
 .guarantees__sliders-button             
     margin: 2vw 0
     @media screen and (min-width: 768px)
