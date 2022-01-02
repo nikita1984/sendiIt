@@ -28,18 +28,18 @@
   font-style: normal;
   font-weight: 900;
 }
-.guarantees__titel, .advantages__titel, .reviews__titel {
+.FAQ__titel, .guarantees__titel, .advantages__titel, .reviews__titel {
   font-size: 8.9vw;
 }
 @media screen and (min-width: 768px) {
-  .guarantees__titel, .advantages__titel, .reviews__titel {
+  .FAQ__titel, .guarantees__titel, .advantages__titel, .reviews__titel {
     font-size: 4.8vw;
     font-weight: 700;
     margin-bottom: 3vw;
   }
 }
 @media screen and (min-width: 1024px) {
-  .guarantees__titel, .advantages__titel, .reviews__titel {
+  .FAQ__titel, .guarantees__titel, .advantages__titel, .reviews__titel {
     font-size: 2.5vw;
   }
 }
@@ -50,6 +50,25 @@
 @media screen and (min-width: 768px) {
   .guarantees__sliders-container_Two, .guarantees__sliders-container_Three, .slider__slide-container_Two {
     display: block;
+  }
+}
+
+.FAQ {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+@media screen and (min-width: 768px) {
+  .FAQ {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .FAQ {
+    padding-left: 9%;
+    padding-right: 9%;
   }
 }
 
@@ -93,7 +112,7 @@ p {
   font-weight: 400;
   font-size: 72%;
   font-size: 3.6vw;
-  color: black;
+  color: #000000;
 }
 @media screen and (min-width: 768px) {
   p {
@@ -844,7 +863,7 @@ main {
 .callBack__btn {
   margin-top: 5%;
   background: #FFCC00;
-  color: black;
+  color: #000000;
 }
 @media screen and (min-width: 768px) {
   .callBack__btn {
@@ -1293,7 +1312,7 @@ main {
 }
 
 .guarantees__sliders-description {
-  color: black;
+  color: #000000;
   font-size: 4vw;
   margin: 3vw 0;
 }
@@ -1317,6 +1336,46 @@ main {
     width: 100%;
     margin: inherit;
   }
+}
+
+.FAQ {
+  background-color: #D2ECF7;
+}
+
+.FAQ__details {
+  margin-bottom: 4vw;
+  background-color: #FFFFFF;
+  color: #000000;
+  border-radius: 10vw;
+  padding: 6%;
+}
+.FAQ__details summary:after {
+  content: url("../images/Rectangle.svg");
+  box-sizing: border-box;
+  align-self: center;
+  transform: rotate(0turn);
+  transition: transform 0.5s;
+}
+.FAQ__details[open] summary:after {
+  align-self: start;
+  transform: rotateZ(180deg);
+}
+.FAQ__details[open] .FAQ__detailsTxt {
+  background-color: #F7F7F7;
+  border-radius: 2vw;
+  padding-top: 3vw;
+}
+
+.FAQ__detailsTxt {
+  display: inline-block;
+  margin: 0;
+  font-size: 5vw;
+}
+
+.FAQ__summary {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
 }
 
 .mt_3percent {

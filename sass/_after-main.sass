@@ -389,3 +389,36 @@
     @media screen and (min-width: 768px)
         width: 100%
         margin: inherit 
+
+.FAQ
+    @extend %containerHorisontalPadding
+    background-color: #D2ECF7
+.FAQ__titel
+    @extend %section__titel_font
+.FAQ__details
+    margin-bottom: 4vw
+    background-color: $mainColorThree
+    color: $textColor
+    border-radius: 10vw
+    padding: 6%
+    & summary:after
+        content: url('../images/Rectangle.svg')
+        box-sizing: border-box
+        align-self: center
+        transform: rotate(0turn)
+        transition: transform .5s
+    &[open] summary:after
+        align-self: start
+        transform: rotateZ(180deg)
+    &[open] .FAQ__detailsTxt
+        background-color: $mainColorFour
+        border-radius: 2vw
+        padding-top: 3vw 
+.FAQ__detailsTxt
+    display: inline-block
+    margin: 0
+    font-size: 5vw
+.FAQ__summary
+    list-style-type: none
+    display: flex
+    justify-content: space-between
