@@ -1338,6 +1338,16 @@ main {
   }
 }
 
+/* FAQ-section */
+.FAQ__detailsTxt, .FAQ__details {
+  font-size: 5vw;
+}
+@media screen and (min-width: 768px) {
+  .FAQ__detailsTxt, .FAQ__details {
+    font-size: 2.08vw;
+  }
+}
+
 .FAQ {
   background-color: #D2ECF7;
 }
@@ -1348,6 +1358,9 @@ main {
   color: #000000;
   border-radius: 10vw;
   padding: 6%;
+}
+.FAQ__details:last-child {
+  margin-bottom: inherit;
 }
 .FAQ__details summary:after {
   content: url("../images/Rectangle.svg");
@@ -1369,7 +1382,6 @@ main {
 .FAQ__detailsTxt {
   display: inline-block;
   margin: 0;
-  font-size: 5vw;
 }
 
 .FAQ__summary {

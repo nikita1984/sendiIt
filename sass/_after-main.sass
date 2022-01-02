@@ -390,17 +390,26 @@
         width: 100%
         margin: inherit 
 
+/* FAQ-section */
+%FAQ_font-size
+    font-size: 5vw
+    @media screen and (min-width: 768px)
+        font-size: 2.08vw
 .FAQ
     @extend %containerHorisontalPadding
     background-color: #D2ECF7
 .FAQ__titel
     @extend %section__titel_font
 .FAQ__details
+    @extend %FAQ_font-size
     margin-bottom: 4vw
     background-color: $mainColorThree
     color: $textColor
+    // font-size: 5vw
     border-radius: 10vw
     padding: 6%
+    &:last-child
+        margin-bottom: inherit    
     & summary:after
         content: url('../images/Rectangle.svg')
         box-sizing: border-box
@@ -417,7 +426,8 @@
 .FAQ__detailsTxt
     display: inline-block
     margin: 0
-    font-size: 5vw
+    @extend %FAQ_font-size
+    // font-size: 16px
 .FAQ__summary
     list-style-type: none
     display: flex
