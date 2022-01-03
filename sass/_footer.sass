@@ -1,0 +1,20 @@
+footer
+    background-color: $footer_backgroundColor
+    @extend %containerPadding
+.callbackFooter__titel
+    text-transform: uppercase
+.callbackFooter__input
+    $color: #363636
+    @extend .callBack__input
+    background-color: $footer_backgroundColor
+    border-color: $color
+    &::placeholder 
+        color: $color
+        font-weight: 400
+.callbackFooter___checkboxLabel
+    @extend .callBack__checkboxLabel
+    background-color: $footer_backgroundColor
+    color: #9E9E9E
+.callbackFooter__checkboxInput
+    @extend .callBack__checkboxInput
+    

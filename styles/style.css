@@ -53,20 +53,20 @@
   }
 }
 
-.partners, .FAQ {
+footer, .partners, .FAQ {
   padding-top: 5%;
   padding-bottom: 5%;
   padding-left: 5%;
   padding-right: 5%;
 }
 @media screen and (min-width: 768px) {
-  .partners, .FAQ {
+  footer, .partners, .FAQ {
     padding-left: 4%;
     padding-right: 4%;
   }
 }
 @media screen and (min-width: 1024px) {
-  .partners, .FAQ {
+  footer, .partners, .FAQ {
     padding-left: 9%;
     padding-right: 9%;
   }
@@ -123,10 +123,6 @@ p {
   p {
     font-size: 1.15vw;
   }
-}
-
-footer {
-  background: red;
 }
 
 .root {
@@ -851,15 +847,15 @@ main {
   }
 }
 
-.callBack__input {
+.callBack__input, .callbackFooter__input {
   color: white;
   border-color: white;
 }
-.callBack__input::placeholder {
+.callBack__input::placeholder, .callbackFooter__input::placeholder {
   color: white;
 }
 @media screen and (min-width: 768px) {
-  .callBack__input {
+  .callBack__input, .callbackFooter__input {
     width: 100%;
   }
 }
@@ -875,7 +871,7 @@ main {
   }
 }
 
-.callBack__checkboxLabel {
+.callBack__checkboxLabel, .callbackFooter___checkboxLabel {
   width: 80%;
   color: white;
   background-color: #008DCD;
@@ -884,30 +880,30 @@ main {
   margin-bottom: 3%;
 }
 @media screen and (min-width: 768px) {
-  .callBack__checkboxLabel {
+  .callBack__checkboxLabel, .callbackFooter___checkboxLabel {
     font-size: 1.39vw;
     margin-left: inherit;
   }
 }
 @media screen and (min-width: 1024px) {
-  .callBack__checkboxLabel {
+  .callBack__checkboxLabel, .callbackFooter___checkboxLabel {
     font-size: 0.9vw;
     vertical-align: baseline;
   }
 }
 @media screen and (min-width: 2560px) {
-  .callBack__checkboxLabel {
+  .callBack__checkboxLabel, .callbackFooter___checkboxLabel {
     margin-top: 0.2vw;
   }
 }
 
-.callBack__checkboxInput {
+.callBack__checkboxInput, .callbackFooter__checkboxInput {
   margin-right: 3%;
   margin-top: 3%;
   vertical-align: sub;
 }
 @media screen and (min-width: 376px) and (max-width: 767px) {
-  .callBack__checkboxInput {
+  .callBack__checkboxInput, .callbackFooter__checkboxInput {
     vertical-align: baseline;
   }
 }
@@ -1510,6 +1506,28 @@ main {
   .partners__icons_bringoLogo {
     margin-top: 0.5vw;
   }
+}
+
+footer {
+  background-color: #E9E9E9;
+}
+
+.callbackFooter__titel {
+  text-transform: uppercase;
+}
+
+.callbackFooter__input {
+  background-color: #E9E9E9;
+  border-color: #363636;
+}
+.callbackFooter__input::placeholder {
+  color: #363636;
+  font-weight: 400;
+}
+
+.callbackFooter___checkboxLabel {
+  background-color: #E9E9E9;
+  color: #9E9E9E;
 }
 
 .mt_3percent {
