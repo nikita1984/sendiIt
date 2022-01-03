@@ -395,12 +395,26 @@
     font-size: 5vw
     @media screen and (min-width: 768px)
         font-size: 2.15vw
+    @media screen and (min-width: 1024px)
+        font-size: 1.12vw
+        line-height: 1.4vw
 
 .FAQ
-    @extend %containerHorisontalPadding
+    @extend %containerPadding
     background-color: #D2ECF7
+    @media screen and (min-width: 1024px)
+        padding: 
+            top: 4vw
+            bottom: 3vw    
 .FAQ__titel
     @extend %section__titel_font
+    @media screen and (min-width: 1024px)
+        margin-bottom: 1vw
+.FAQ__detailsContainer
+    @media screen and (min-width: 1024px)
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
 .FAQ__details
     @extend %FAQ_font-size
     margin-bottom: 4vw
@@ -411,14 +425,25 @@
     padding: 6% 7%
     @media screen and (min-width: 768px)
         padding: 2% 4%
+    @media screen and (min-width: 1024px)
+        padding: 1vw 1.8vw
+        width: 48%
+        margin-bottom: inherit
+        margin-top: 1.3vw     
     &:last-child
-        margin-bottom: inherit    
+        @media screen and (max-width: 1023px)
+            margin-bottom: inherit
     & summary:after
         content: url('../images/Rectangle.svg')
         box-sizing: border-box
         align-self: center
         transform: rotate(0turn)
         transition: transform .5s
+    &[open]
+        @media screen and (min-width: 768px)
+            border-radius: 4vw 
+        @media screen and (min-width: 1024px)
+            border-radius: 2vw    
     &[open] summary:after
         align-self: start
         transform: rotateZ(180deg)
@@ -426,8 +451,11 @@
         // background-color: $mainColorFour
         border-radius: 2vw
         padding-top: 7vw
+        // padding-top: 8%
         @media screen and (min-width: 768px)
             padding-top: 3vw
+        @media screen and (min-width: 1024px)
+            padding-top: 1.2vw
 .FAQ__detailsTxt
     display: inline-block
     margin: 0

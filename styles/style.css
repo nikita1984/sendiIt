@@ -1347,9 +1347,35 @@ main {
     font-size: 2.15vw;
   }
 }
+@media screen and (min-width: 1024px) {
+  .FAQ__detailsTxt, .FAQ__details {
+    font-size: 1.12vw;
+    line-height: 1.4vw;
+  }
+}
 
 .FAQ {
   background-color: #D2ECF7;
+}
+@media screen and (min-width: 1024px) {
+  .FAQ {
+    padding-top: 4vw;
+    padding-bottom: 3vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .FAQ__titel {
+    margin-bottom: 1vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .FAQ__detailsContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 .FAQ__details {
@@ -1364,8 +1390,18 @@ main {
     padding: 2% 4%;
   }
 }
-.FAQ__details:last-child {
-  margin-bottom: inherit;
+@media screen and (min-width: 1024px) {
+  .FAQ__details {
+    padding: 1vw 1.8vw;
+    width: 48%;
+    margin-bottom: inherit;
+    margin-top: 1.3vw;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .FAQ__details:last-child {
+    margin-bottom: inherit;
+  }
 }
 .FAQ__details summary:after {
   content: url("../images/Rectangle.svg");
@@ -1373,6 +1409,16 @@ main {
   align-self: center;
   transform: rotate(0turn);
   transition: transform 0.5s;
+}
+@media screen and (min-width: 768px) {
+  .FAQ__details[open] {
+    border-radius: 4vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .FAQ__details[open] {
+    border-radius: 2vw;
+  }
 }
 .FAQ__details[open] summary:after {
   align-self: start;
@@ -1385,6 +1431,11 @@ main {
 @media screen and (min-width: 768px) {
   .FAQ__details[open] .FAQ__detailsTxt {
     padding-top: 3vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .FAQ__details[open] .FAQ__detailsTxt {
+    padding-top: 1.2vw;
   }
 }
 
