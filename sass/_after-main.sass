@@ -338,7 +338,6 @@
         @extend %slide__displayBesidesMobile       
 .guarantees__sliders-iconBlock
     background-color: $mainElementColor
-    background-color: wheat 
     border-radius: 50%
     min-width: 21vw
     height: 21vw
@@ -391,10 +390,12 @@
         margin: inherit 
 
 /* FAQ-section */
+/* TODO: realise rendering background color in details-open */    
 %FAQ_font-size
     font-size: 5vw
     @media screen and (min-width: 768px)
-        font-size: 2.08vw
+        font-size: 2.15vw
+
 .FAQ
     @extend %containerHorisontalPadding
     background-color: #D2ECF7
@@ -405,9 +406,11 @@
     margin-bottom: 4vw
     background-color: $mainColorThree
     color: $textColor
-    // font-size: 5vw
     border-radius: 10vw
-    padding: 6%
+    // padding: 6vw 7vw
+    padding: 6% 7%
+    @media screen and (min-width: 768px)
+        padding: 2% 4%
     &:last-child
         margin-bottom: inherit    
     & summary:after
@@ -420,14 +423,15 @@
         align-self: start
         transform: rotateZ(180deg)
     &[open] .FAQ__detailsTxt
-        background-color: $mainColorFour
+        // background-color: $mainColorFour
         border-radius: 2vw
-        padding-top: 3vw 
+        padding-top: 7vw
+        @media screen and (min-width: 768px)
+            padding-top: 3vw
 .FAQ__detailsTxt
     display: inline-block
     margin: 0
     @extend %FAQ_font-size
-    // font-size: 16px
 .FAQ__summary
     list-style-type: none
     display: flex

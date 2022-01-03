@@ -1252,7 +1252,6 @@ main {
 }
 .guarantees__sliders-iconBlock {
   background-color: #F7F7F7;
-  background-color: wheat;
   border-radius: 50%;
   min-width: 21vw;
   height: 21vw;
@@ -1339,12 +1338,13 @@ main {
 }
 
 /* FAQ-section */
+/* TODO: realise rendering background color in details-open */    
 .FAQ__detailsTxt, .FAQ__details {
   font-size: 5vw;
 }
 @media screen and (min-width: 768px) {
   .FAQ__detailsTxt, .FAQ__details {
-    font-size: 2.08vw;
+    font-size: 2.15vw;
   }
 }
 
@@ -1357,7 +1357,12 @@ main {
   background-color: #FFFFFF;
   color: #000000;
   border-radius: 10vw;
-  padding: 6%;
+  padding: 6% 7%;
+}
+@media screen and (min-width: 768px) {
+  .FAQ__details {
+    padding: 2% 4%;
+  }
 }
 .FAQ__details:last-child {
   margin-bottom: inherit;
@@ -1374,9 +1379,13 @@ main {
   transform: rotateZ(180deg);
 }
 .FAQ__details[open] .FAQ__detailsTxt {
-  background-color: #F7F7F7;
   border-radius: 2vw;
-  padding-top: 3vw;
+  padding-top: 7vw;
+}
+@media screen and (min-width: 768px) {
+  .FAQ__details[open] .FAQ__detailsTxt {
+    padding-top: 3vw;
+  }
 }
 
 .FAQ__detailsTxt {
