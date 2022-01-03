@@ -1498,8 +1498,18 @@ main {
     width: 12%;
   }
 }
+@media screen and (min-width: 1024px) {
+  .partners__icons {
+    width: 9%;
+  }
+}
 .partners__icons_bringoLogo {
   margin-top: 1vw;
+}
+@media screen and (min-width: 1024px) {
+  .partners__icons_bringoLogo {
+    margin-top: 0.5vw;
+  }
 }
 
 .mt_3percent {
