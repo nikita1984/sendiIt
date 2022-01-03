@@ -23,3 +23,10 @@
    right: $right
    > img
       width: 100%
+
+@mixin flex ($justifyContent: "flex-start", $alignItems: "flex-start", $flexWrap: "nowrap", $flexDirection: "row")
+   display: flex
+   justify-content: $justifyContent
+   align-items: $alignItems
+   flex-wrap: $flexWrap
+   flex-direction: $flexDirection 

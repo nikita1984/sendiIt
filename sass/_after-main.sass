@@ -464,3 +464,24 @@
     list-style-type: none
     display: flex
     justify-content: space-between
+
+/* partners-section */
+.partners
+    @extend %containerPadding
+    background-color: #FFFFFF
+    @include flex(space-between)
+.partners__slider-controlersContainer
+    @include flex(flex-start, center)
+.partners__slider-ihner
+    @include flex(space-between, flex-start, wrap)
+    @media screen and (min-width: 768px)
+        @include flex(space-between, center)
+        width: 84%
+.partners__icons
+    width: 30%
+    @media screen and (min-width: 768px)
+        width: 12%
+    &_tntLogo, &_upsLogo
+        @extend %slide__displayBesidesMobile
+    &_bringoLogo
+        margin-top: 1vw  

@@ -44,29 +44,29 @@
   }
 }
 
-.guarantees__sliders-container_Two, .guarantees__sliders-container_Three, .slider__slide-container_Two {
+.partners__icons_tntLogo, .partners__icons_upsLogo, .guarantees__sliders-container_Two, .guarantees__sliders-container_Three, .slider__slide-container_Two {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .guarantees__sliders-container_Two, .guarantees__sliders-container_Three, .slider__slide-container_Two {
+  .partners__icons_tntLogo, .partners__icons_upsLogo, .guarantees__sliders-container_Two, .guarantees__sliders-container_Three, .slider__slide-container_Two {
     display: block;
   }
 }
 
-.FAQ {
+.partners, .FAQ {
   padding-top: 5%;
   padding-bottom: 5%;
   padding-left: 5%;
   padding-right: 5%;
 }
 @media screen and (min-width: 768px) {
-  .FAQ {
+  .partners, .FAQ {
     padding-left: 4%;
     padding-right: 4%;
   }
 }
 @media screen and (min-width: 1024px) {
-  .FAQ {
+  .partners, .FAQ {
     padding-left: 9%;
     padding-right: 9%;
   }
@@ -174,6 +174,10 @@ footer {
 ul {
   list-style-type: none;
   list-style-position: outside;
+}
+
+.icons_global {
+  width: 100%;
 }
 
 .header__image {
@@ -1448,6 +1452,54 @@ main {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
+}
+
+/* partners-section */
+.partners {
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: "flex-start";
+  flex-wrap: "nowrap";
+  flex-direction: "row";
+}
+
+.partners__slider-controlersContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: "nowrap";
+  flex-direction: "row";
+}
+
+.partners__slider-ihner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: "row";
+}
+@media screen and (min-width: 768px) {
+  .partners__slider-ihner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: "nowrap";
+    flex-direction: "row";
+    width: 84%;
+  }
+}
+
+.partners__icons {
+  width: 30%;
+}
+@media screen and (min-width: 768px) {
+  .partners__icons {
+    width: 12%;
+  }
+}
+.partners__icons_bringoLogo {
+  margin-top: 1vw;
 }
 
 .mt_3percent {
