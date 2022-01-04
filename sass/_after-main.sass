@@ -390,7 +390,6 @@
         margin: inherit 
 
 /* FAQ-section */
-/* TODO: realise rendering background color in details-open */    
 %FAQ_font-size
     font-size: 5vw
     @media screen and (min-width: 768px)
@@ -418,9 +417,7 @@
         margin-bottom: 1vw
 .FAQ__detailsContainer
     @media screen and (min-width: 1024px)
-        display: flex
-        justify-content: space-between
-        flex-wrap: wrap
+        @include flex(space-between, flex-start, wrap)
 .FAQ__details
     @extend %FAQ_font-size
     margin-bottom: 4vw
@@ -430,7 +427,6 @@
         width: 48%
         margin-bottom: inherit
         margin-top: 1.3vw
-        // max-height: 4vw      
     &:last-child
         @media screen and (max-width: 1023px)
             margin-bottom: inherit
@@ -447,48 +443,40 @@
         align-self: start
         transform: rotateZ(180deg)
     &[open] .FAQ__summary
-        border-radius: 10vw 10vw 0 0
+        border-radius: $FAQ-details__border-radius_mobile $FAQ-details__border-radius_mobile 0 0
         @media screen and (min-width: 768px)
-            border-radius: 4vw 4vw 0 0
+            border-radius: $FAQ-details__border-radius_tablet $FAQ-details__border-radius_tablet 0 0
         @media screen and (min-width: 1024px)
-            border-radius: 2vw 2vw 0 0
-            // padding: 1.2vw 4%     
+            border-radius: $FAQ-details__border-radius_desctop $FAQ-details__border-radius_desctop 0 0
     &[open] .FAQ__detailsTxt
         @extend %FAQ__details_padding
         background-color: $mainColorFour
-        border-radius: 0 0 10vw 10vw
-        // padding: 6% 7%
+        border-radius: 0 0 $FAQ-details__border-radius_mobile $FAQ-details__border-radius_mobile
         @media screen and (min-width: 768px)
-        //    padding: 2% 4%
-            border-radius: 0 0 4vw 4vw
+            border-radius: 0 0 $FAQ-details__border-radius_tablet $FAQ-details__border-radius_tablet
         @media screen and (min-width: 1024px)
-            border-radius: 0 0 2vw 2vw    
-        //    padding: 1.2vw 4%  
+            border-radius: 0 0 $FAQ-details__border-radius_desctop $FAQ-details__border-radius_desctop    
 .FAQ__detailsTxt
+    @extend %FAQ_font-size
     display: inline-block
     margin: 0
-    @extend %FAQ_font-size
 .FAQ__summary
     @extend %FAQ__details_padding
+    @include flex(space-between)
     list-style-type: none
-    display: flex
-    justify-content: space-between
     background-color: $mainColorThree
     color: $textColor
-    border-radius: 10vw
-    // padding: 6% 7%
+    border-radius: $FAQ-details__border-radius_mobile
     @media screen and (min-width: 768px)
-        border-radius: 4vw 
-        // padding: 2% 4%
+        border-radius: $FAQ-details__border-radius_tablet
     @media screen and (min-width: 1024px) 
-        border-radius: 2vw
-        // padding: 1.2vw 4%   
+        border-radius: $FAQ-details__border-radius_desctop
 
 /* partners-section */
 .partners
     @extend %containerPadding
-    background-color: #FFFFFF
     @include flex(space-between)
+    background-color: #FFFFFF
 .partners__slider-controlersContainer
     @include flex(flex-start, center)
 .partners__slider-ihner

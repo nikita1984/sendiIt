@@ -1338,7 +1338,6 @@ main {
 }
 
 /* FAQ-section */
-/* TODO: realise rendering background color in details-open */    
 .FAQ__detailsTxt, .FAQ__details {
   font-size: 5vw;
 }
@@ -1388,7 +1387,9 @@ main {
   .FAQ__detailsContainer {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     flex-wrap: wrap;
+    flex-direction: "row";
   }
 }
 
@@ -1440,6 +1441,11 @@ main {
   background-color: #F7F7F7;
   border-radius: 0 0 10vw 10vw;
 }
+@media screen and (min-width: 768px) {
+  .FAQ__details[open] .FAQ__detailsTxt {
+    border-radius: 0 0 4vw 4vw;
+  }
+}
 @media screen and (min-width: 1024px) {
   .FAQ__details[open] .FAQ__detailsTxt {
     border-radius: 0 0 2vw 2vw;
@@ -1452,9 +1458,12 @@ main {
 }
 
 .FAQ__summary {
-  list-style-type: none;
   display: flex;
   justify-content: space-between;
+  align-items: "flex-start";
+  flex-wrap: "nowrap";
+  flex-direction: "row";
+  list-style-type: none;
   background-color: #FFFFFF;
   color: #000000;
   border-radius: 10vw;
@@ -1472,12 +1481,12 @@ main {
 
 /* partners-section */
 .partners {
-  background-color: #FFFFFF;
   display: flex;
   justify-content: space-between;
   align-items: "flex-start";
   flex-wrap: "nowrap";
   flex-direction: "row";
+  background-color: #FFFFFF;
 }
 
 .partners__slider-controlersContainer {
