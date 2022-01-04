@@ -59,6 +59,8 @@
         width: 33%
         margin-top: inherit
 
+/* callback-section */
+
 .callBack
     @include containerHorisontalPadding
     padding-top: $sectionPaddingTop
@@ -107,20 +109,22 @@
         width: 43%
     @media screen and (min-width: 1024px)    
         width: 33%
-        margin-top: 0.3vw                
+        margin-top: 0.3vw   
+// TODO: maybe replace to %callBack__input                     
 .callBack__input
     color: $textAlternativeColor
     border-color: $textAlternativeColor
-    &::placeholder 
-        color: white
     @media screen and (min-width: 768px)
         width: 100%
+    &::placeholder 
+        color: white
 .callBack__btn
     margin-top: 5%    
     background: #FFCC00
     color: $textColor
     @media screen and (min-width: 768px)
         width: 100%
+// TODO: maybe replace to %callBack__checkboxLabel        
 .callBack__checkboxLabel
     width: 80%
     color: white
@@ -136,7 +140,8 @@
         font-size: 0.9vw
         vertical-align: baseline
     @media screen and (min-width: 2560px)
-        margin-top: 0.2vw    
+        margin-top: 0.2vw
+// TODO: maybe replace to %callBack__checkboxInput            
 .callBack__checkboxInput
     margin:
         right: 3%

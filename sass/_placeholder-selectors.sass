@@ -19,10 +19,11 @@
     word-spacing: 0.5vw
     letter-spacing: 0.2vw
 
+// TODO: optimise code %containerPadding */
 %containerPadding
    padding: 
-        top: $sectionPaddingTop
-        bottom: $sectionPaddingBottom 
+        top: 5%
+        bottom: 5%
         left: 5%
         right: 5%
    @media screen and (min-width: 768px)
@@ -32,4 +33,35 @@
    @media screen and (min-width: 1024px)
       padding: 
         left: 9%
-        right: 9%                             
+        right: 9%     
+
+%callback__input
+    color: $textAlternativeColor
+    border-color: $textAlternativeColor
+    @media screen and (min-width: 768px)
+        width: 100%
+    &::placeholder 
+        color: white 
+%callback__checkboxLabel
+    width: 80%
+    color: white
+    background-color: $mainColor
+    font-size: 3.17vw
+    margin:
+        left: 2%     
+        bottom: 3%
+    @media screen and (min-width: 768px)
+        font-size: 1.39vw
+        margin-left: inherit
+    @media screen and (min-width: 1024px)
+        font-size: 0.9vw
+        vertical-align: baseline
+    @media screen and (min-width: 2560px)
+        margin-top: 0.2vw
+%callback__checkboxInput
+    margin:
+        right: 3%
+        top: 3%  
+    vertical-align: sub
+    @media screen and (min-width: 376px) and (max-width: 767px)
+        vertical-align: baseline        

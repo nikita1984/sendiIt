@@ -1,20 +1,65 @@
 footer
     background-color: $footer_backgroundColor
     @extend %containerPadding
+.callbackFooter
+    padding-bottom: 0
+    padding-top: 4%
+.callbackFooter__upperContainer
+    @media screen and (min-width: 768px)
+        @include flex(space-between, center)
+    &> *
+        @media screen and (min-width: 768px)
+            width: 30%
+            // margin-bottom: 1vw                    
 .callbackFooter__titel
     text-transform: uppercase
+    @media screen and (min-width: 768px)
+        font-size: 2.6vw
+        align-self: end
+        margin-bottom: 1.5%
+        // margin-bottom: 0.4vw
+    @media screen and (min-width: 1024px)
+        font-size: 2.1vw
+        margin-bottom: 0.4vw
 .callbackFooter__input
     $color: #363636
-    @extend .callBack__input
+    @extend %callback__input
     background-color: $footer_backgroundColor
     border-color: $color
     &::placeholder 
         color: $color
         font-weight: 400
+        font-size: 4.8vw
+        @media screen and (min-width: 768px)
+            // font-size: 2.4vw
+            font-size: inherit 
+        // @media screen and (min-width: 1024px)
+            // font-size: inherit   
+.callbackFooter__button
+    margin:
+        top: 3.5vw
+        bottom: 1vw
+    @media screen and (min-width: 768px)
+        margin: inherit              
 .callbackFooter___checkboxLabel
-    @extend .callBack__checkboxLabel
+    @extend %callback__checkboxLabel
     background-color: $footer_backgroundColor
     color: #9E9E9E
+    margin-bottom: 4%
+    @media screen and (min-width: 768px)
+        @include flex(center, center)
+        width: 100%
+        margin: 1vw 0 1vw 1vw
+    @media screen and (min-width: 1024px)
+        margin-left: -2vw    
 .callbackFooter__checkboxInput
-    @extend .callBack__checkboxInput
-    
+    @extend %callback__checkboxInput
+    @media screen and (min-width: 768px)
+        margin:
+            right: 1vw
+            top: -0.6vw
+.callbackFooter__hr
+    margin: 0    
+
+.copyrightFooter
+    background-color: wheat        
