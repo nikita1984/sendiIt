@@ -398,6 +398,12 @@
     @media screen and (min-width: 1024px)
         font-size: 1.12vw
         line-height: 1.4vw
+%FAQ__details_padding
+    padding: 6% 7%
+    @media screen and (min-width: 768px)
+        padding: 2% 4%
+    @media screen and (min-width: 1024px) 
+        padding: 1.2vw 4%   
 
 .FAQ
     @extend %containerPadding
@@ -418,19 +424,13 @@
 .FAQ__details
     @extend %FAQ_font-size
     margin-bottom: 4vw
-    // background-color: $mainColorThree
-    // color: $textColor
-    // border-radius: 10vw
-    //// padding: 6vw 7vw
-    //  padding: 6% 7%
     @media screen and (min-width: 768px)
         margin-bottom: 1.5vw
     @media screen and (min-width: 1024px)
-        // padding: 1vw 1.8vw
         width: 48%
         margin-bottom: inherit
         margin-top: 1.3vw
-        max-height: 4vw      
+        // max-height: 4vw      
     &:last-child
         @media screen and (max-width: 1023px)
             margin-bottom: inherit
@@ -441,11 +441,8 @@
         transform: rotate(0turn)
         transition: transform .5s
     &[open]
-        @media screen and (min-width: 768px)
-            // border-radius: 4vw 
         @media screen and (min-width: 1024px)
-            // border-radius: 2vw
-            max-height: none    
+            // max-height: none    
     &[open] summary:after
         align-self: start
         transform: rotateZ(180deg)
@@ -454,37 +451,38 @@
         @media screen and (min-width: 768px)
             border-radius: 4vw 4vw 0 0
         @media screen and (min-width: 1024px)
-            border-radius: 2vw 2vw 0 0   
+            border-radius: 2vw 2vw 0 0
+            // padding: 1.2vw 4%     
     &[open] .FAQ__detailsTxt
+        @extend %FAQ__details_padding
         background-color: $mainColorFour
         border-radius: 0 0 10vw 10vw
-        padding: 6% 7%
+        // padding: 6% 7%
         @media screen and (min-width: 768px)
-            padding: 2% 4%
+        //    padding: 2% 4%
             border-radius: 0 0 4vw 4vw
         @media screen and (min-width: 1024px)
             border-radius: 0 0 2vw 2vw    
-        // padding-top: 7vw
-        // padding-top: 8%
-        @media screen and (min-width: 768px)
-            // padding-top: 3vw
-        @media screen and (min-width: 1024px)
-            padding-top: 1.2vw
+        //    padding: 1.2vw 4%  
 .FAQ__detailsTxt
     display: inline-block
     margin: 0
     @extend %FAQ_font-size
 .FAQ__summary
+    @extend %FAQ__details_padding
     list-style-type: none
     display: flex
     justify-content: space-between
     background-color: $mainColorThree
     color: $textColor
     border-radius: 10vw
-    // padding: 6vw 7vw
-    padding: 6% 7%
+    // padding: 6% 7%
     @media screen and (min-width: 768px)
-        padding: 2% 4%
+        border-radius: 4vw 
+        // padding: 2% 4%
+    @media screen and (min-width: 1024px) 
+        border-radius: 2vw
+        // padding: 1.2vw 4%   
 
 /* partners-section */
 .partners

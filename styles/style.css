@@ -1354,6 +1354,20 @@ main {
   }
 }
 
+.FAQ__summary, .FAQ__details[open] .FAQ__detailsTxt {
+  padding: 6% 7%;
+}
+@media screen and (min-width: 768px) {
+  .FAQ__summary, .FAQ__details[open] .FAQ__detailsTxt {
+    padding: 2% 4%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .FAQ__summary, .FAQ__details[open] .FAQ__detailsTxt {
+    padding: 1.2vw 4%;
+  }
+}
+
 .FAQ {
   background-color: #D2ECF7;
 }
@@ -1391,7 +1405,6 @@ main {
     width: 48%;
     margin-bottom: inherit;
     margin-top: 1.3vw;
-    max-height: 4vw;
   }
 }
 @media screen and (max-width: 1023px) {
@@ -1405,11 +1418,6 @@ main {
   align-self: center;
   transform: rotate(0turn);
   transition: transform 0.5s;
-}
-@media screen and (min-width: 1024px) {
-  .FAQ__details[open] {
-    max-height: none;
-  }
 }
 .FAQ__details[open] summary:after {
   align-self: start;
@@ -1431,22 +1439,10 @@ main {
 .FAQ__details[open] .FAQ__detailsTxt {
   background-color: #F7F7F7;
   border-radius: 0 0 10vw 10vw;
-  padding: 6% 7%;
-}
-@media screen and (min-width: 768px) {
-  .FAQ__details[open] .FAQ__detailsTxt {
-    padding: 2% 4%;
-    border-radius: 0 0 4vw 4vw;
-  }
 }
 @media screen and (min-width: 1024px) {
   .FAQ__details[open] .FAQ__detailsTxt {
     border-radius: 0 0 2vw 2vw;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .FAQ__details[open] .FAQ__detailsTxt {
-    padding-top: 1.2vw;
   }
 }
 
@@ -1462,11 +1458,15 @@ main {
   background-color: #FFFFFF;
   color: #000000;
   border-radius: 10vw;
-  padding: 6% 7%;
 }
 @media screen and (min-width: 768px) {
   .FAQ__summary {
-    padding: 2% 4%;
+    border-radius: 4vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .FAQ__summary {
+    border-radius: 2vw;
   }
 }
 
