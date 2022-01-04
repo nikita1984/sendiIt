@@ -418,11 +418,11 @@
 .FAQ__details
     @extend %FAQ_font-size
     margin-bottom: 4vw
-    background-color: $mainColorThree
-    color: $textColor
-    border-radius: 10vw
-    // padding: 6vw 7vw
-    padding: 6% 7%
+    // background-color: $mainColorThree
+    // color: $textColor
+    // border-radius: 10vw
+    //// padding: 6vw 7vw
+    //  padding: 6% 7%
     @media screen and (min-width: 768px)
         padding: 2% 4%
     @media screen and (min-width: 1024px)
@@ -449,10 +449,13 @@
     &[open] summary:after
         align-self: start
         transform: rotateZ(180deg)
+    &[open] .FAQ__summary
+        border-radius: 10vw 10vw 0 0
     &[open] .FAQ__detailsTxt
-        // background-color: $mainColorFour
-        border-radius: 2vw
-        padding-top: 7vw
+        background-color: $mainColorFour
+        border-radius: 0 0 10vw 10vw
+        padding: 6% 7%
+        // padding-top: 7vw
         // padding-top: 8%
         @media screen and (min-width: 768px)
             padding-top: 3vw
@@ -466,6 +469,11 @@
     list-style-type: none
     display: flex
     justify-content: space-between
+    background-color: $mainColorThree
+    color: $textColor
+    border-radius: 10vw
+    // padding: 6vw 7vw
+    padding: 6% 7%
 
 /* partners-section */
 .partners

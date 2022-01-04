@@ -1380,10 +1380,6 @@ main {
 
 .FAQ__details {
   margin-bottom: 4vw;
-  background-color: #FFFFFF;
-  color: #000000;
-  border-radius: 10vw;
-  padding: 6% 7%;
 }
 @media screen and (min-width: 768px) {
   .FAQ__details {
@@ -1426,9 +1422,13 @@ main {
   align-self: start;
   transform: rotateZ(180deg);
 }
+.FAQ__details[open] .FAQ__summary {
+  border-radius: 10vw 10vw 0 0;
+}
 .FAQ__details[open] .FAQ__detailsTxt {
-  border-radius: 2vw;
-  padding-top: 7vw;
+  background-color: #F7F7F7;
+  border-radius: 0 0 10vw 10vw;
+  padding: 6% 7%;
 }
 @media screen and (min-width: 768px) {
   .FAQ__details[open] .FAQ__detailsTxt {
@@ -1450,6 +1450,10 @@ main {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
+  background-color: #FFFFFF;
+  color: #000000;
+  border-radius: 10vw;
+  padding: 6% 7%;
 }
 
 /* partners-section */
