@@ -424,9 +424,9 @@
     //// padding: 6vw 7vw
     //  padding: 6% 7%
     @media screen and (min-width: 768px)
-        // padding: 2% 4%
+        margin-bottom: 1.5vw
     @media screen and (min-width: 1024px)
-        padding: 1vw 1.8vw
+        // padding: 1vw 1.8vw
         width: 48%
         margin-bottom: inherit
         margin-top: 1.3vw
@@ -444,7 +444,7 @@
         @media screen and (min-width: 768px)
             // border-radius: 4vw 
         @media screen and (min-width: 1024px)
-            border-radius: 2vw
+            // border-radius: 2vw
             max-height: none    
     &[open] summary:after
         align-self: start
@@ -452,7 +452,9 @@
     &[open] .FAQ__summary
         border-radius: 10vw 10vw 0 0
         @media screen and (min-width: 768px)
-           border-radius: 4vw 4vw 0 0 
+            border-radius: 4vw 4vw 0 0
+        @media screen and (min-width: 1024px)
+            border-radius: 2vw 2vw 0 0   
     &[open] .FAQ__detailsTxt
         background-color: $mainColorFour
         border-radius: 0 0 10vw 10vw
@@ -460,6 +462,8 @@
         @media screen and (min-width: 768px)
             padding: 2% 4%
             border-radius: 0 0 4vw 4vw
+        @media screen and (min-width: 1024px)
+            border-radius: 0 0 2vw 2vw    
         // padding-top: 7vw
         // padding-top: 8%
         @media screen and (min-width: 768px)
