@@ -1381,11 +1381,6 @@ main {
 .FAQ__details {
   margin-bottom: 4vw;
 }
-@media screen and (min-width: 768px) {
-  .FAQ__details {
-    padding: 2% 4%;
-  }
-}
 @media screen and (min-width: 1024px) {
   .FAQ__details {
     padding: 1vw 1.8vw;
@@ -1407,11 +1402,6 @@ main {
   transform: rotate(0turn);
   transition: transform 0.5s;
 }
-@media screen and (min-width: 768px) {
-  .FAQ__details[open] {
-    border-radius: 4vw;
-  }
-}
 @media screen and (min-width: 1024px) {
   .FAQ__details[open] {
     border-radius: 2vw;
@@ -1425,6 +1415,11 @@ main {
 .FAQ__details[open] .FAQ__summary {
   border-radius: 10vw 10vw 0 0;
 }
+@media screen and (min-width: 768px) {
+  .FAQ__details[open] .FAQ__summary {
+    border-radius: 4vw 4vw 0 0;
+  }
+}
 .FAQ__details[open] .FAQ__detailsTxt {
   background-color: #F7F7F7;
   border-radius: 0 0 10vw 10vw;
@@ -1432,7 +1427,8 @@ main {
 }
 @media screen and (min-width: 768px) {
   .FAQ__details[open] .FAQ__detailsTxt {
-    padding-top: 3vw;
+    padding: 2% 4%;
+    border-radius: 0 0 4vw 4vw;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -1454,6 +1450,11 @@ main {
   color: #000000;
   border-radius: 10vw;
   padding: 6% 7%;
+}
+@media screen and (min-width: 768px) {
+  .FAQ__summary {
+    padding: 2% 4%;
+  }
 }
 
 /* partners-section */
