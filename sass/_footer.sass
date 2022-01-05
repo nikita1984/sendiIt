@@ -108,24 +108,44 @@ footer
         top: 4%
         bottom: 2.4%
     @media screen and (min-width: 768px)
-        // @include flex(start)
+        padding: 
+            top: 1.5%
+            bottom: 1.5%
     & p
         font-size: 3.13vw
         display: inline-block
         margin-bottom: unset
         @media screen and (min-width: 768px)
-            // font-size: 12px
             font-size: 1.56vw
+        @media screen and (min-width: 1024px)
+            font-size: 1.2vw    
 .copyrightFooter__leftBlock
     @include flex(space-between, center)
     width: 68% 
     @media screen and (min-width: 768px)
         width: 36% 
+    @media screen and (min-width: 1024px)
+        width: 32% 
+.copyrightFooter__year
+    @media screen and (min-width: 768px) and  (max-width: 1023px)
+        position: relative
+        left: 130%         
 .copyrightFooter__socialNetworks
     @extend %displayBesidesMobile
     @media screen and (min-width: 768px)
-        width: 15%
         @include flex(space-between, center)
-        margin-left: -22%         
+        width: 12%
+        margin:
+            top: -0.5% 
+            left: -22% 
+    @media screen and (min-width: 1024px)
+        width: 10%
+        margin-left: -18.5% 
+    & > img
+        @media screen and (min-width: 768px)
+            width: 18%
+        @media screen and (min-width: 1024px)
+            width: 16%
 .copyrightFooter__copyrightAuthor
-    // padding-top: 1%    
+    @media screen and (min-width: 1024px)
+        padding-right: 1.5%   
