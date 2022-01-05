@@ -1552,7 +1552,7 @@ main {
 .partners {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: nowrap;
   flex-direction: row;
   background-color: #FFFFFF;
