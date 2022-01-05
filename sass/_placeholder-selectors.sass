@@ -8,10 +8,15 @@
     @media screen and (min-width: 1024px)
         font-size: 2.5vw
 
+// TODO: optimise code slide__displayBesidesMobile     
 %slide__displayBesidesMobile
     display: none
     @media screen and (min-width: 768px)
-        display: block   
+        display: block
+
+%displayOnlyMobile
+    @media screen and (min-width: 768px)
+        display: none               
 
 %desctopButtonText
     height: 3.5vw
@@ -19,7 +24,7 @@
     word-spacing: 0.5vw
     letter-spacing: 0.2vw
 
-// TODO: optimise code %containerPadding */
+// TODO: optimise code %containerPadding
 %containerPadding
    padding: 
         top: 5%
@@ -65,3 +70,10 @@
     vertical-align: sub
     @media screen and (min-width: 376px) and (max-width: 767px)
         vertical-align: baseline        
+%logo_width 
+    width: 30vw
+    @media screen and (min-width: 768px)
+        width: 15vw
+
+%img_width
+    width: 100% 

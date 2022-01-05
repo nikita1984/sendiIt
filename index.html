@@ -14,12 +14,13 @@
     <div class="root">
         <header>
             <div class="header__image">
-                <div class="logo">
+                <div class="header__logoBlock">
                     <a href="index.html">
-                        <img src="./images/logo.png" alt="logo.png">
+                        <img src="./images/logo.png" alt="logo.png" class="header__logoImg">
                     </a>   
                 </div>
-                <div class="mobileMenuIcon"><img src="./images/mobile_menu.svg" alt="mobile_menu.svg">
+                <div class="header__mobileMenuIcon">
+                    <img src="./images/mobile_menu.svg" alt="mobile_menu.svg" class="header__mobileMenuIcon-Img">
                     <div class="navContainerMobile">
                         <div class="navContainerMobile__headerContainer">
                             <div><img src="./images/logo_mini_nav.png" alt="logo_mini_nav.png"></div>
@@ -447,19 +448,69 @@
             <div class="callbackFooter__upperContainer">
                 <h3 class="callbackFooter__titel">остались вопросы?</h3>
                 <input class="input-global callbackFooter__input" type="tel" placeholder="Ваш телефон">
-                <button type="button" class="btn btn-primary notFrameworkBtn callbackFooter__button">заказать звонок</button>   
+                <button type="button" class="btn btn-primary notFrameworkBtn callbackFooter__button">
+                    заказать звонок
+                </button>   
             </div>
-            <!--  
-            <div class="callBack__checkbox">
-            -->
-                <label class="callbackFooter___checkboxLabel">
-                    <input type="checkbox" class="callbackFooter__checkboxInput">
-                    Я согласен на обработку персональных данных
-                </label>
-                <!--  
-            </div>
-            -->
+            <label class="callbackFooter___checkboxLabel">
+                <input type="checkbox" class="callbackFooter__checkboxInput">
+                Я согласен на обработку персональных данных
+            </label>
             <hr class="callbackFooter__hr">
+        </footer>
+        <footer class="navSectionFooter">
+            <div class="navSectionFooter__logoBlock">
+                <a href="index.html">
+                    <img src="./images/logo_mini_nav.png" alt="logo_mini_nav.png" 
+                    class="navSectionFooter__logoImg">
+                </a>   
+            </div>
+            <div class="navSectionFooter__mobileMenuIcon">
+                <img src="./images/mobile_menu_black.svg" alt="mobile_menu.svg" 
+                class="navSectionFooter__mobileMenuIcon-Img">
+                <!-- TODO: to realise mobile menu open and close -->
+                <div class="navContainerMobile">
+                    <div class="navContainerMobile__headerContainer">
+                        <div><img src="./images/logo_mini_nav.png" alt="logo_mini_nav.png"></div>
+                        <div class="navContainerMobile__menuCloseContainer">
+                            <img class="mobileMenuClose" src="./images/mobile_menu_close.svg" alt="mobile_menu_close.svg">
+                        </div>
+                    </div>
+                    <nav class="nav_mobile">
+                        <ul>
+                            <li><a href="index.html">Главная</a></li>
+                            <li><a href="#">Описания</a></li>
+                            <li><a href="#">Преимущества</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Партнёры</a></li>
+                            <li><a href="#">Гарантии</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </nav>
+                    <form action="">
+                        <p>TODO: доделать form</p>
+                        <h3>остались вопросы?</h3>
+                        <input type="tel" placeholder="Ваш телефон">
+                        <button class="btn btn-primary notFrameworkBtn">заказать звонок</button>
+                    </form>
+                    <p>TODO: доделать icons</p>
+                </div>
+            </div>
+            <!-- 
+            <nav class="nav_big">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#">Описания</a></li>
+                    <li><a href="#">Преимущества</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Партнёры</a></li>
+                    <li><a href="#">Гарантии</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </nav>
+            -->
+        </div>
+            <hr class="navSectionFooter__hr">
         </footer>
         
         <footer class="copyrightFooter">end line text</footer>

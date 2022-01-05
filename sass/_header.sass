@@ -6,20 +6,23 @@
     display: flex
     justify-content: space-between
     padding: 8%
-
     @media screen and (min-width: 768px)
         background: url('../images/header_tablet_background.jpg') no-repeat
         background-size: contain
         min-height: 100vw * 0.538
         padding: 3% 4%
         justify-content: flex-start
-
     @media screen and (min-width: 1024px)
         background: url('../images/header_desktop_background.jpg') no-repeat
         background-size: contain
         min-height: 100vw * 0.363
         margin: 0 auto
         padding: 3% 9%
+
+.header__logoBlock
+    @extend %logo_width
+.header__logoImg
+    @extend %img_width     
 
 .header__textContainer
     padding: 3% 6%
@@ -36,7 +39,6 @@
         top: 20%
         top: 11.2vw
         left: 9%     
-       
 .header__h1_mobile
     @media screen and (min-width: 768px)
         display: none
@@ -71,22 +73,12 @@
     @media screen and (min-width: 1024px) 
         width: 47%
         margin-top: 4%
-
-.logo 
-    width: 30vw
-
-    & > a > img
-        width: 100%
-
-    @media screen and (min-width: 768px)
-        width: 15vw        
-
-.mobileMenuIcon 
-    width: 10vw
-    & > img
-        width: 100%
-    @media screen and (min-width: 768px)
-        display: none
+        
+.header__mobileMenuIcon 
+    @extend %displayOnlyMobile
+    width: 11vw 
+.header__mobileMenuIcon-Img
+    @extend %img_width   
 
 .nav_mobile
     color: #000000
@@ -136,7 +128,7 @@
         display: flex
         justify-content: space-between
         padding: 11% 8% 
-    .mobileMenuIcon:hover &
+    .header__mobileMenuIcon:hover &
         display: block
     &__menuCloseContainer
         padding-top: 4%

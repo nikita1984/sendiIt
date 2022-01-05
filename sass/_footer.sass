@@ -1,6 +1,8 @@
 footer
     background-color: $footer_backgroundColor
     @extend %containerPadding
+
+/* callbackFooter-section */    
 .callbackFooter
     padding-bottom: 0
     padding-top: 4%
@@ -55,6 +57,21 @@ footer
             top: -0.6vw
 .callbackFooter__hr
     margin: 0    
+
+/* navFooter-section */    
+.navSectionFooter
+    @include flex(space-between, center)
+.navSectionFooter__logoBlock
+    @extend %logo_width
+    @media screen and (max-width: 767px)
+        width: 43vw 
+.navSectionFooter__logoImg
+    @extend %img_width 
+.navSectionFooter__mobileMenuIcon
+    @extend %displayOnlyMobile
+    width: 12.2vw
+.navSectionFooter__mobileMenuIcon-Img
+    @extend %img_width 
 
 .copyrightFooter
     background-color: wheat        

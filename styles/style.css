@@ -53,6 +53,12 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .navSectionFooter__mobileMenuIcon, .header__mobileMenuIcon {
+    display: none;
+  }
+}
+
 footer, .partners, .FAQ {
   padding-top: 5%;
   padding-bottom: 5%;
@@ -120,6 +126,19 @@ footer, .partners, .FAQ {
   .callbackFooter__checkboxInput {
     vertical-align: baseline;
   }
+}
+
+.navSectionFooter__logoBlock, .header__logoBlock {
+  width: 30vw;
+}
+@media screen and (min-width: 768px) {
+  .navSectionFooter__logoBlock, .header__logoBlock {
+    width: 15vw;
+  }
+}
+
+.navSectionFooter__mobileMenuIcon-Img, .navSectionFooter__logoImg, .header__mobileMenuIcon-Img, .header__logoImg {
+  width: 100%;
 }
 
 html {
@@ -337,28 +356,8 @@ ul {
   }
 }
 
-.logo {
-  width: 30vw;
-}
-.logo > a > img {
-  width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .logo {
-    width: 15vw;
-  }
-}
-
-.mobileMenuIcon {
-  width: 10vw;
-}
-.mobileMenuIcon > img {
-  width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .mobileMenuIcon {
-    display: none;
-  }
+.header__mobileMenuIcon {
+  width: 11vw;
 }
 
 .nav_mobile {
@@ -417,7 +416,7 @@ ul {
   justify-content: space-between;
   padding: 11% 8%;
 }
-.mobileMenuIcon:hover .navContainerMobile {
+.header__mobileMenuIcon:hover .navContainerMobile {
   display: block;
 }
 .navContainerMobile__menuCloseContainer {
@@ -1592,6 +1591,7 @@ footer {
   background-color: #E9E9E9;
 }
 
+/* callbackFooter-section */    
 .callbackFooter {
   padding-bottom: 0;
   padding-top: 4%;
@@ -1685,6 +1685,25 @@ footer {
 
 .callbackFooter__hr {
   margin: 0;
+}
+
+/* navFooter-section */    
+.navSectionFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: "nowrap";
+  flex-direction: "row";
+}
+
+@media screen and (max-width: 767px) {
+  .navSectionFooter__logoBlock {
+    width: 43vw;
+  }
+}
+
+.navSectionFooter__mobileMenuIcon {
+  width: 12.2vw;
 }
 
 .copyrightFooter {
