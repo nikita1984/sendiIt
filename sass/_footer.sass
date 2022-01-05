@@ -107,10 +107,25 @@ footer
     padding:
         top: 4%
         bottom: 2.4%
-    & > p
+    @media screen and (min-width: 768px)
+        // @include flex(start)
+    & p
         font-size: 3.13vw
         display: inline-block
         margin-bottom: unset
-       
+        @media screen and (min-width: 768px)
+            // font-size: 12px
+            font-size: 1.56vw
+.copyrightFooter__leftBlock
+    @include flex(space-between, center)
+    width: 68% 
+    @media screen and (min-width: 768px)
+        width: 36% 
 .copyrightFooter__socialNetworks
-    @extend %displayBesidesMobile 
+    @extend %displayBesidesMobile
+    @media screen and (min-width: 768px)
+        width: 15%
+        @include flex(space-between, center)
+        margin-left: -22%         
+.copyrightFooter__copyrightAuthor
+    // padding-top: 1%    
