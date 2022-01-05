@@ -20,7 +20,9 @@
         padding: 3% 9%
 
 .header__logoBlock
-    @extend %logo_width
+    width: 30vw
+    @media screen and (min-width: 768px)
+        width: 15vw
 .header__logoImg
     @extend %img_width     
 
@@ -87,34 +89,57 @@
         family: $mainFont
         size: 12vw
         weight: 400
-
-.nav_big
-    color: #ffffff
+%nav_big
+    // color: #ffffff
     width: 100%
     font:
         family: $mainFont
         size: 2.2vw
-        weight: 300
+        // weight: 300
         position: fixed
-        
     & > ul
         display: flex
         justify-content: space-between
-
     & > ul > li > a:hover
         font-weight: 400
         color: #ffffff
         letter-spacing: -0.05vw
-
         @media screen and (min-width: 1440px)
            letter-spacing: -0.06vw
-
     @media screen and (max-width: 767px)
         display: none
-
     @media screen and (min-width: 1023px)
         font-size: 2vw
         margin-left: 7%
+
+.nav_big
+    $color: #ffffff
+    @extend %nav_big
+    color: $color
+    font-weight: 300
+    & > ul > li > a:hover
+        color: $color
+    // color: #ffffff
+    // width: 100%
+    // font:
+    //     family: $mainFont
+    //     size: 2.2vw
+    //     weight: 300
+    //     position: fixed
+    // & > ul
+    //     display: flex
+    //     justify-content: space-between
+    // & > ul > li > a:hover
+    //     font-weight: 400
+    //     color: #ffffff
+    //     letter-spacing: -0.05vw
+    //     @media screen and (min-width: 1440px)
+    //        letter-spacing: -0.06vw
+    // @media screen and (max-width: 767px)
+    //     display: none
+    // @media screen and (min-width: 1023px)
+    //     font-size: 2vw
+    //     margin-left: 7%
 
 .navContainerMobile
     position: absolute

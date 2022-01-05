@@ -4,8 +4,11 @@ footer
 
 /* callbackFooter-section */    
 .callbackFooter
-    padding-bottom: 0
-    padding-top: 4%
+    padding:
+        top: 4%
+        bottom: 0
+    @media screen and (min-width: 1024px)    
+        padding-top: 2.5%
 .callbackFooter__upperContainer
     @media screen and (min-width: 768px)
         @include flex(space-between, center)
@@ -55,16 +58,29 @@ footer
         margin:
             right: 1vw
             top: -0.6vw
-.callbackFooter__hr
-    margin: 0    
+// .callbackFooter__hr
+    // margin: 0    
 
 /* navFooter-section */    
 .navSectionFooter
     @include flex(space-between, center)
+    @media screen and (min-width: 768px)
+        align-items: start
+        padding:
+            top: 2.5%
+            bottom: 2.7%
+    @media screen and (min-width: 1024px)
+        padding:
+            top: 1.8%
+            bottom: 1.5%        
 .navSectionFooter__logoBlock
-    @extend %logo_width
-    @media screen and (max-width: 767px)
-        width: 43vw 
+    width: 43vw
+    @media screen and (min-width: 768px)
+        width: 15%
+        // width: 11.5vw
+    @media screen and (min-width: 1024px)
+        // width: 11.5vw
+        width: 13.5%    
 .navSectionFooter__logoImg
     @extend %img_width 
 .navSectionFooter__mobileMenuIcon
@@ -72,6 +88,26 @@ footer
     width: 12.2vw
 .navSectionFooter__mobileMenuIcon-Img
     @extend %img_width 
+.navSectionFooter__nav_big
+    $color: $textColor
+    @extend %nav_big
+    color: $color
+    font-weight: 400
+    padding-top: 0.7%
+    @media screen and (min-width: 768px)
+        width: 82.3%
+    @media screen and (min-width: 1024px)
+        margin: unset
+        font-size: 1.5vw
+        width: 83.3%
+    & > ul 
+        padding: unset
+    & > ul > li > a:hover
+       color: $color
+       
+        
+// .navSectionFooter__hr        
+//     margin: 0
 
 .copyrightFooter
     background-color: wheat        
