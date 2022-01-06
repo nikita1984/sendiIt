@@ -24,10 +24,11 @@
         display: none               
 
 %desctopButtonText
-    height: 3.5vw
-    font-size: 1vw
-    word-spacing: 0.5vw
-    letter-spacing: 0.2vw
+    @media screen and (min-width: 1024px)
+        height: 3.5vw
+        font-size: 1vw
+        word-spacing: 0.5vw
+        letter-spacing: 0.2vw
 
 // TODO: optimise code %containerPadding
 %containerPadding
@@ -75,10 +76,6 @@
     vertical-align: sub
     @media screen and (min-width: 376px) and (max-width: 767px)
         vertical-align: baseline        
-// %logo_width 
-    // width: 30vw
-    // @media screen and (min-width: 768px)
-    //     width: 15vw
 
 %img_width
     width: 100% 

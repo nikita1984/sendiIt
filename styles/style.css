@@ -68,6 +68,15 @@
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .notFrameworkBtn, .input-global {
+    height: 3.5vw;
+    font-size: 1vw;
+    word-spacing: 0.5vw;
+    letter-spacing: 0.2vw;
+  }
+}
+
 footer, .partners, .FAQ {
   padding-top: 5%;
   padding-bottom: 5%;
@@ -219,14 +228,6 @@ p {
 }
 .notFrameworkBtn:hover, .input-global:hover {
   background-color: #008DCD;
-}
-@media screen and (min-width: 1024px) {
-  .notFrameworkBtn, .input-global {
-    height: 3.5vw;
-    font-size: 1vw;
-    word-spacing: 0.5vw;
-    letter-spacing: 0.2vw;
-  }
 }
 
 .input-global {
