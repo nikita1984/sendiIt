@@ -118,11 +118,19 @@
     &::placeholder 
         color: white
 .callBack__btn
+    $background-color: #FFCC00
     margin-top: 5%    
-    background: #FFCC00
+    background-color: $background-color
     color: $textColor
     @media screen and (min-width: 768px)
         width: 100%
+    &:hover, &:focus, &:focus-visible, &:active
+        color: $textColor
+    &:hover, &:focus, &:focus-visible
+        background-color: $background-color
+    &:active
+        background-color: #FCE39C
+
 // TODO: maybe replace to %callBack__checkboxLabel        
 .callBack__checkboxLabel
     width: 80%

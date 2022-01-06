@@ -208,6 +208,7 @@ p {
 }
 
 .input-global, .notFrameworkBtn {
+  outline: none;
   background-color: #008DCD;
   border-color: #008DCD;
   border-radius: 30vw;
@@ -942,13 +943,22 @@ main {
 
 .callBack__btn {
   margin-top: 5%;
-  background: #FFCC00;
+  background-color: #FFCC00;
   color: #000000;
 }
 @media screen and (min-width: 768px) {
   .callBack__btn {
     width: 100%;
   }
+}
+.callBack__btn:hover, .callBack__btn:focus, .callBack__btn:focus-visible, .callBack__btn:active {
+  color: #000000;
+}
+.callBack__btn:hover, .callBack__btn:focus, .callBack__btn:focus-visible {
+  background-color: #FFCC00;
+}
+.callBack__btn:active {
+  background-color: #FCE39C;
 }
 
 .callBack__checkboxLabel {
