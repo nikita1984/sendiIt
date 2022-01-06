@@ -42,9 +42,10 @@ p
 .root
    width: 100%
 
-.notFrameworkBtn
+%button-input
    @extend %desctopButtonText
    background-color: $mainColor
+   border-color: $mainColor
    border-radius: 30vw
    display: inline-block
    cursor: pointer 
@@ -54,14 +55,23 @@ p
    font-size: 1rem
    font-weight: 600
    @media screen and (max-width: 767px)
-      width: 100%  
+      width: 100%
+   &:active, &:focus, &:focus-visible
+      box-shadow: unset 
+   &:active:focus
+      box-shadow: unset          
+
+.notFrameworkBtn
+   @extend %button-input
+   &:hover, &:focus, &:focus-visible
+      background-color: $mainColor
+      border-color: $mainColor
    &:active
       background-color: $mainColorTwo
-   &:hover
-      background-color: $mainColor
-      
+      border-color: $mainColorTwo
+   
 .input-global
-   @extend .notFrameworkBtn
+   @extend %button-input
    text-transform: inherit 
    padding: 0.375rem 1.25rem
    border: 1px solid black

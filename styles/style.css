@@ -69,7 +69,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .notFrameworkBtn, .input-global {
+  .input-global, .notFrameworkBtn {
     height: 3.5vw;
     font-size: 1vw;
     word-spacing: 0.5vw;
@@ -207,8 +207,9 @@ p {
   width: 100%;
 }
 
-.notFrameworkBtn, .input-global {
+.input-global, .notFrameworkBtn {
   background-color: #008DCD;
+  border-color: #008DCD;
   border-radius: 30vw;
   display: inline-block;
   cursor: pointer;
@@ -219,15 +220,24 @@ p {
   font-weight: 600;
 }
 @media screen and (max-width: 767px) {
-  .notFrameworkBtn, .input-global {
+  .input-global, .notFrameworkBtn {
     width: 100%;
   }
 }
-.notFrameworkBtn:active, .input-global:active {
-  background-color: #94D1EC;
+.input-global:active, .notFrameworkBtn:active, .input-global:focus, .notFrameworkBtn:focus, .input-global:focus-visible, .notFrameworkBtn:focus-visible {
+  box-shadow: unset;
 }
-.notFrameworkBtn:hover, .input-global:hover {
+.input-global:active:focus, .notFrameworkBtn:active:focus {
+  box-shadow: unset;
+}
+
+.notFrameworkBtn:hover, .notFrameworkBtn:focus, .notFrameworkBtn:focus-visible {
   background-color: #008DCD;
+  border-color: #008DCD;
+}
+.notFrameworkBtn:active {
+  background-color: #94D1EC;
+  border-color: #94D1EC;
 }
 
 .input-global {
