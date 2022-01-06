@@ -1677,6 +1677,7 @@ footer {
 .callbackFooter__input {
   background-color: #E9E9E9;
   border-color: #363636;
+  color: #363636;
 }
 .callbackFooter__input::placeholder {
   color: #363636;
