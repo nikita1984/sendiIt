@@ -43,7 +43,6 @@ p
    width: 100%
 
 %button-input
-   @extend %desctopButtonText
    outline: none
    background-color: $mainColor
    border:
@@ -62,7 +61,8 @@ p
    &:active, &:focus, &:focus-visible
       box-shadow: unset 
    &:active:focus
-      box-shadow: unset          
+      box-shadow: unset 
+   @extend %desctopButtonText            
 
 .notFrameworkBtn
    @extend %button-input

@@ -907,11 +907,11 @@ main {
 @media screen and (min-width: 768px) {
   .callBack__text {
     font-size: 2vw;
-    margin-top: inherit;
   }
 }
 @media screen and (min-width: 1024px) {
   .callBack__text {
+    margin-top: unset;
     font-size: 1.73vw;
   }
 }
