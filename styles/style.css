@@ -446,7 +446,6 @@ hr {
   min-height: 616px;
   background-color: #ffffff;
   display: none;
-  display: block;
   padding: 5% 8% 10%;
 }
 .header__mobileMenu:hover .header__mobileMenu-Container {
