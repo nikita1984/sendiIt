@@ -25,34 +25,21 @@ footer
         font-size: 2.1vw
         margin-bottom: 0.4vw
 .callbackFooter__input
-    $color: #363636
     @extend %callback__input
-    background-color: $footer_backgroundColor
-    border-color: $color
-    color: $color
-    &::placeholder 
-        color: $color
-        font-weight: 400
-        font-size: 4.8vw
-        @media screen and (min-width: 768px)
-            font-size: inherit 
+    @extend %input__alternative
+    background-color: inherit
+    border-color: #363636
+    
 .callbackFooter__button
     margin:
         top: 3.5vw
         bottom: 1vw
     @media screen and (min-width: 768px)
-        margin: inherit              
+        margin: inherit     
+
 .callbackFooter___checkboxLabel
-    @extend %callback__checkboxLabel
-    background-color: $footer_backgroundColor
-    color: #9E9E9E
-    margin-bottom: 4%
-    @media screen and (min-width: 768px)
-        @include flex(center, center)
-        width: 100%
-        margin: 1vw 0 1vw 1vw
-    @media screen and (min-width: 1024px)
-        margin-left: -2vw    
+    @extend %callbackFooter___checkboxLabel
+    
 .callbackFooter__checkboxInput
     @extend %callback__checkboxInput
     @media screen and (min-width: 768px)

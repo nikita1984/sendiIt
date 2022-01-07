@@ -44,26 +44,17 @@
   }
 }
 
-.partners__icons_tntLogo, .partners__icons_upsLogo, .guarantees__sliders-container_Two, .guarantees__sliders-container_Three, .slider__slide-container_Two {
+.copyrightFooter__socialNetworks, .partners__icons_tntLogo, .partners__icons_upsLogo, .guarantees__sliders-container_Two, .guarantees__sliders-container_Three, .slider__slide-container_Two {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .partners__icons_tntLogo, .partners__icons_upsLogo, .guarantees__sliders-container_Two, .guarantees__sliders-container_Three, .slider__slide-container_Two {
-    display: block;
-  }
-}
-
-.copyrightFooter__socialNetworks {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .copyrightFooter__socialNetworks {
+  .copyrightFooter__socialNetworks, .partners__icons_tntLogo, .partners__icons_upsLogo, .guarantees__sliders-container_Two, .guarantees__sliders-container_Three, .slider__slide-container_Two {
     display: block;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .navSectionFooter__mobileMenuIcon, .header__mobileMenuIcon {
+  .navSectionFooter__mobileMenuIcon, .header__mobileMenu, .header__h1_mobile {
     display: none;
   }
 }
@@ -109,7 +100,23 @@ footer, .partners, .FAQ {
   color: white;
 }
 
-.callbackFooter___checkboxLabel {
+.callbackFooter__input, .header__mobileMenu-input {
+  background-color: inherit;
+  border-color: #363636;
+  color: #363636;
+}
+.callbackFooter__input::placeholder, .header__mobileMenu-input::placeholder {
+  color: #363636;
+  font-weight: 400;
+  font-size: 4.8vw;
+}
+@media screen and (min-width: 768px) {
+  .callbackFooter__input::placeholder, .header__mobileMenu-input::placeholder {
+    font-size: inherit;
+  }
+}
+
+.callbackFooter___checkboxLabel, .header__mobileMenu-formInputLabel {
   width: 80%;
   color: white;
   background-color: #008DCD;
@@ -118,19 +125,19 @@ footer, .partners, .FAQ {
   margin-bottom: 3%;
 }
 @media screen and (min-width: 768px) {
-  .callbackFooter___checkboxLabel {
+  .callbackFooter___checkboxLabel, .header__mobileMenu-formInputLabel {
     font-size: 1.39vw;
     margin-left: inherit;
   }
 }
 @media screen and (min-width: 1024px) {
-  .callbackFooter___checkboxLabel {
+  .callbackFooter___checkboxLabel, .header__mobileMenu-formInputLabel {
     font-size: 0.9vw;
     vertical-align: baseline;
   }
 }
 @media screen and (min-width: 2560px) {
-  .callbackFooter___checkboxLabel {
+  .callbackFooter___checkboxLabel, .header__mobileMenu-formInputLabel {
     margin-top: 0.2vw;
   }
 }
@@ -146,8 +153,60 @@ footer, .partners, .FAQ {
   }
 }
 
-.navSectionFooter__mobileMenuIcon-Img, .navSectionFooter__logoImg, .header__mobileMenuIcon-Img, .header__logoImg {
+.navSectionFooter__mobileMenuIcon-Img, .navSectionFooter__logoImg, .header__mobileMenu-Img, .header__logoImg {
   width: 100%;
+}
+
+.navSectionFooter__nav_big, .header__nav_big {
+  width: 100%;
+  font-family: "Myriad Pro";
+  font-size: 2.2vw;
+  font-position: fixed;
+}
+.navSectionFooter__nav_big > ul, .header__nav_big > ul {
+  display: flex;
+  justify-content: space-between;
+}
+.navSectionFooter__nav_big > ul > li > a:hover, .header__nav_big > ul > li > a:hover {
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: -0.05vw;
+}
+@media screen and (min-width: 1440px) {
+  .navSectionFooter__nav_big > ul > li > a:hover, .header__nav_big > ul > li > a:hover {
+    letter-spacing: -0.06vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navSectionFooter__nav_big, .header__nav_big {
+    display: none;
+  }
+}
+@media screen and (min-width: 1023px) {
+  .navSectionFooter__nav_big, .header__nav_big {
+    font-size: 2vw;
+    margin-left: 7%;
+  }
+}
+
+.callbackFooter___checkboxLabel, .header__mobileMenu-formInputLabel {
+  background-color: #E9E9E9;
+  color: #9E9E9E;
+  margin-bottom: 4%;
+}
+@media screen and (min-width: 768px) {
+  .callbackFooter___checkboxLabel, .header__mobileMenu-formInputLabel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 1vw 0 1vw 1vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .callbackFooter___checkboxLabel, .header__mobileMenu-formInputLabel {
+    margin-left: -2vw;
+  }
 }
 
 html {
@@ -321,12 +380,6 @@ hr {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .header__h1_mobile {
-    display: none;
-  }
-}
-
 .header__h1_tablet {
   font-size: 5.8vw;
 }
@@ -381,59 +434,11 @@ hr {
   }
 }
 
-.header__mobileMenuIcon {
+.header__mobileMenu {
   width: 11vw;
 }
 
-.nav_mobile {
-  color: #000000;
-  line-height: 1.9;
-  font-family: "Myriad Pro";
-  font-size: 12vw;
-  font-weight: 400;
-}
-
-.navSectionFooter__nav_big, .nav_big {
-  width: 100%;
-  font-family: "Myriad Pro";
-  font-size: 2.2vw;
-  font-position: fixed;
-}
-.navSectionFooter__nav_big > ul, .nav_big > ul {
-  display: flex;
-  justify-content: space-between;
-}
-.navSectionFooter__nav_big > ul > li > a:hover, .nav_big > ul > li > a:hover {
-  font-weight: 400;
-  color: #ffffff;
-  letter-spacing: -0.05vw;
-}
-@media screen and (min-width: 1440px) {
-  .navSectionFooter__nav_big > ul > li > a:hover, .nav_big > ul > li > a:hover {
-    letter-spacing: -0.06vw;
-  }
-}
-@media screen and (max-width: 767px) {
-  .navSectionFooter__nav_big, .nav_big {
-    display: none;
-  }
-}
-@media screen and (min-width: 1023px) {
-  .navSectionFooter__nav_big, .nav_big {
-    font-size: 2vw;
-    margin-left: 7%;
-  }
-}
-
-.nav_big {
-  color: #ffffff;
-  font-weight: 300;
-}
-.nav_big > ul > li > a:hover {
-  color: #ffffff;
-}
-
-.navContainerMobile {
+.header__mobileMenu-Container {
   position: absolute;
   top: 0vw;
   left: 0vw;
@@ -441,17 +446,79 @@ hr {
   min-height: 616px;
   background-color: #ffffff;
   display: none;
+  display: block;
+  padding: 5% 8% 10%;
 }
-.navContainerMobile__headerContainer {
-  display: flex;
-  justify-content: space-between;
-  padding: 11% 8%;
-}
-.header__mobileMenuIcon:hover .navContainerMobile {
+.header__mobileMenu:hover .header__mobileMenu-Container {
   display: block;
 }
-.navContainerMobile__menuCloseContainer {
+
+.header__mobileMenu-headSubContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.header__mobileMenu-closeIconContainer {
   padding-top: 4%;
+}
+
+.header__mobileMenu-nav {
+  margin-top: 4vw;
+  color: #000000;
+  line-height: 1.9;
+  font-family: "Myriad Pro";
+  font-size: 5.8vw;
+  font-weight: 400;
+}
+.header__mobileMenu-nav > ul {
+  padding: unset;
+}
+.header__mobileMenu-nav > ul > li {
+  margin-bottom: 2vw;
+}
+.header__mobileMenu-nav > ul > li:last-child {
+  margin-bottom: 1vw;
+}
+
+.header__mobileMenu-form {
+  margin-top: -1vw;
+}
+
+.header__mobileMenu-formTitel {
+  font-size: 6.5vw;
+  text-transform: uppercase;
+}
+
+.header__mobileMenu-input {
+  background-color: inherit;
+  border-color: #363636;
+  margin-bottom: 4vw;
+}
+
+.header__mobileMenu-formInputLabel {
+  background-color: inherit;
+  font-size: 2.9vw;
+  margin-top: 2vw;
+  margin-bottom: 6vw;
+}
+
+.header__mobileMenu__socialNetworks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.header__nav_big {
+  color: #ffffff;
+  font-weight: 300;
+}
+.header__nav_big > ul > li > a:hover {
+  color: #ffffff;
 }
 
 main {
@@ -1675,19 +1742,8 @@ footer {
 }
 
 .callbackFooter__input {
-  background-color: #E9E9E9;
+  background-color: inherit;
   border-color: #363636;
-  color: #363636;
-}
-.callbackFooter__input::placeholder {
-  color: #363636;
-  font-weight: 400;
-  font-size: 4.8vw;
-}
-@media screen and (min-width: 768px) {
-  .callbackFooter__input::placeholder {
-    font-size: inherit;
-  }
 }
 
 .callbackFooter__button {
@@ -1697,28 +1753,6 @@ footer {
 @media screen and (min-width: 768px) {
   .callbackFooter__button {
     margin: inherit;
-  }
-}
-
-.callbackFooter___checkboxLabel {
-  background-color: #E9E9E9;
-  color: #9E9E9E;
-  margin-bottom: 4%;
-}
-@media screen and (min-width: 768px) {
-  .callbackFooter___checkboxLabel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    width: 100%;
-    margin: 1vw 0 1vw 1vw;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .callbackFooter___checkboxLabel {
-    margin-left: -2vw;
   }
 }
 

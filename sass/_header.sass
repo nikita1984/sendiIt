@@ -42,8 +42,7 @@
         top: 11.2vw
         left: 9%     
 .header__h1_mobile
-    @media screen and (min-width: 768px)
-        display: none
+    @extend %displayOnlyMobile
 
 .header__h1_tablet
     font-size: 5.8vw
@@ -76,72 +75,12 @@
         width: 47%
         margin-top: 4%
         
-.header__mobileMenuIcon 
+.header__mobileMenu 
     @extend %displayOnlyMobile
     width: 11vw 
-.header__mobileMenuIcon-Img
-    @extend %img_width   
-
-.nav_mobile
-    color: #000000
-    line-height: 1.9
-    font:
-        family: $mainFont
-        size: 12vw
-        weight: 400
-%nav_big
-    // color: #ffffff
-    width: 100%
-    font:
-        family: $mainFont
-        size: 2.2vw
-        // weight: 300
-        position: fixed
-    & > ul
-        display: flex
-        justify-content: space-between
-    & > ul > li > a:hover
-        font-weight: 400
-        color: #ffffff
-        letter-spacing: -0.05vw
-        @media screen and (min-width: 1440px)
-           letter-spacing: -0.06vw
-    @media screen and (max-width: 767px)
-        display: none
-    @media screen and (min-width: 1023px)
-        font-size: 2vw
-        margin-left: 7%
-
-.nav_big
-    $color: #ffffff
-    @extend %nav_big
-    color: $color
-    font-weight: 300
-    & > ul > li > a:hover
-        color: $color
-    // color: #ffffff
-    // width: 100%
-    // font:
-    //     family: $mainFont
-    //     size: 2.2vw
-    //     weight: 300
-    //     position: fixed
-    // & > ul
-    //     display: flex
-    //     justify-content: space-between
-    // & > ul > li > a:hover
-    //     font-weight: 400
-    //     color: #ffffff
-    //     letter-spacing: -0.05vw
-    //     @media screen and (min-width: 1440px)
-    //        letter-spacing: -0.06vw
-    // @media screen and (max-width: 767px)
-    //     display: none
-    // @media screen and (min-width: 1023px)
-    //     font-size: 2vw
-    //     margin-left: 7%
-
-.navContainerMobile
+.header__mobileMenu-Img
+    @extend %img_width
+.header__mobileMenu-Container
     position: absolute
     top: 0vw
     left: 0vw
@@ -149,11 +88,51 @@
     min-height: 616px
     background-color: #ffffff
     display: none
-    &__headerContainer
-        display: flex
-        justify-content: space-between
-        padding: 11% 8% 
-    .header__mobileMenuIcon:hover &
+    display: block
+    padding: 5% 8% 10%
+    .header__mobileMenu:hover &
         display: block
-    &__menuCloseContainer
-        padding-top: 4%
+.header__mobileMenu-headSubContainer
+    @include flex (space-between)  
+.header__mobileMenu-closeIconContainer            
+    padding-top: 4%  
+.header__mobileMenu-nav
+    margin-top: 4vw
+    color: #000000
+    line-height: 1.9
+    font:
+        family: $mainFont
+        size: 5.8vw
+        weight: 400 
+    & > ul
+        padding: unset 
+    & > ul > li
+        margin-bottom: 2vw 
+    & > ul > li:last-child
+        margin-bottom: 1vw
+.header__mobileMenu-form        
+    margin-top: -1vw
+.header__mobileMenu-formTitel
+    font-size: 6.5vw
+    text-transform: uppercase
+.header__mobileMenu-input
+    @extend %input__alternative 
+    background-color: inherit
+    border-color: #363636
+    margin-bottom: 4vw
+.header__mobileMenu-formInputLabel
+    @extend %callbackFooter___checkboxLabel
+    background-color: inherit 
+    font-size: 2.9vw 
+    margin-top: 2vw 
+    margin-bottom: 6vw 
+.header__mobileMenu__socialNetworks
+    @include flex (space-between, center)
+
+.header__nav_big
+    $color: #ffffff
+    @extend %nav_big
+    color: $color
+    font-weight: 300
+    & > ul > li > a:hover
+        color: $color

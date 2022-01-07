@@ -261,7 +261,7 @@
 .slider__slide-container_One
     display: block    
 .slider__slide-container_Two
-    @extend %slide__displayBesidesMobile
+    @extend %displayBesidesMobile 
 
 .advantages
     @include containerHorisontalPadding
@@ -347,7 +347,7 @@
     @media screen and (min-width: 768px)
         width: 31%
     &_Two, &_Three
-        @extend %slide__displayBesidesMobile       
+        @extend %displayBesidesMobile        
 .guarantees__sliders-iconBlock
     background-color: $mainElementColor
     border-radius: 50%
@@ -500,7 +500,7 @@
     @media screen and (min-width: 1024px)
         width: 9%    
     &_tntLogo, &_upsLogo
-        @extend %slide__displayBesidesMobile
+        @extend %displayBesidesMobile 
     &_bringoLogo
         margin-top: 1vw
         @media screen and (min-width: 1024px)

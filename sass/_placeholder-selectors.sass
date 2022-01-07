@@ -8,12 +8,6 @@
     @media screen and (min-width: 1024px)
         font-size: 2.5vw
 
-// TODO: optimise code slide__displayBesidesMobile     
-%slide__displayBesidesMobile
-    display: none
-    @media screen and (min-width: 768px)
-        display: block
-
 %displayBesidesMobile 
     display: none
     @media screen and (min-width: 768px)
@@ -53,6 +47,18 @@
         width: 100%
     &::placeholder 
         color: white 
+
+%input__alternative
+    background-color: inherit
+    border-color: #363636
+    color: #363636
+    &::placeholder 
+        color: #363636
+        font-weight: 400
+        font-size: 4.8vw
+        @media screen and (min-width: 768px)
+            font-size: inherit         
+
 %callback__checkboxLabel
     width: 80%
     color: white
@@ -80,4 +86,39 @@
 %img_width
     width: 100% 
 
+%nav_big
+    width: 100%
+    font:
+        family: $mainFont
+        size: 2.2vw
+        // weight: 300
+        position: fixed
+    & > ul
+        display: flex
+        justify-content: space-between
+    & > ul > li > a:hover
+        font-weight: 400
+        color: #ffffff
+        letter-spacing: -0.05vw
+        @media screen and (min-width: 1440px)
+           letter-spacing: -0.06vw
+    @media screen and (max-width: 767px)
+        display: none
+    @media screen and (min-width: 1023px)
+        font-size: 2vw
+        margin-left: 7%    
+
+%callbackFooter___checkboxLabel
+    @extend %callback__checkboxLabel
+    background-color: $footer_backgroundColor
+    color: #9E9E9E
+    margin-bottom: 4%
+    @media screen and (min-width: 768px)
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 100%
+        margin: 1vw 0 1vw 1vw
+    @media screen and (min-width: 1024px)
+        margin-left: -2vw             
         
